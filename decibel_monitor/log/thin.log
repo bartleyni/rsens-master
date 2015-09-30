@@ -54,3 +54,1175 @@ Listening on 0.0.0.0:3030, CTRL+C to stop
 192.168.0.143 - - [30/Sep/2015 18:47:10] "GET / HTTP/1.1" 302 - 0.0048
 192.168.0.143 - - [30/Sep/2015 18:47:10] "GET /monitor HTTP/1.1" 200 1794 0.0241
 192.168.0.143 - - [30/Sep/2015 18:47:10] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+Waiting for 2 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
+Writing PID to tmp/pids/thin.pid
+================================================================================Thin web server (v1.6.4 codename Gob Bluth)
+
+Maximum connections set to 1024
+scheduler caught exception:Listening on 0.0.0.0:3030, CTRL+C to stop
+
+wrong number of arguments(1 for 0)
+/home/pi/decibel_monitor/jobs/adverage.rb:4:in `initialize'
+/home/pi/decibel_monitor/jobs/adverage.rb:4:in `new'
+/home/pi/decibel_monitor/jobs/adverage.rb:4:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1719: [BUG] Segmentation fault
+ruby 1.9.3p194 (2012-04-20 revision 35410) [arm-linux-eabihf]
+
+-- Control frame information -----------------------------------------------
+c:0031 p:0067 s:0122 b:0121 l:000120 d:000120 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1719
+c:0030 p:0032 s:0117 b:0117 l:000116 d:000116 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1479
+c:0029 p:0035 s:0112 b:0111 l:000110 d:000110 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1472
+c:0028 p:0025 s:0105 b:0105 l:000104 d:000104 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1461
+c:0027 p:0009 s:0102 b:0102 l:001060 d:000101 BLOCK  /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486
+c:0026 p:0032 s:0100 b:0100 l:000099 d:000099 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795
+c:0025 p:0011 s:0096 b:0096 l:001060 d:001060 METHOD /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486
+c:0024 p:0201 s:0092 b:0092 l:000078 d:000091 BLOCK  /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb:65
+c:0023 p:---- s:0084 b:0084 l:000083 d:000083 FINISH
+c:0022 p:---- s:0082 b:0082 l:000081 d:000081 CFUNC  :each
+c:0021 p:0063 s:0079 b:0079 l:000078 d:000078 METHOD /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb:50
+c:0020 p:0020 s:0070 b:0070 l:000061 d:000069 BLOCK  /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:86
+c:0019 p:---- s:0068 b:0068 l:000067 d:000067 FINISH
+c:0018 p:---- s:0066 b:0066 l:000065 d:000065 CFUNC  :catch
+c:0017 p:0135 s:0062 b:0062 l:000061 d:000061 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:84
+c:0016 p:0088 s:0056 b:0055 l:000054 d:000054 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:53
+c:0015 p:0045 s:0052 b:0052 l:000051 d:000051 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:39
+c:0014 p:---- s:0047 b:0047 l:000046 d:000046 FINISH
+c:0013 p:---- s:0045 b:0045 l:000044 d:000044 CFUNC  :run_machine
+c:0012 p:0365 s:0042 b:0042 l:000041 d:000041 METHOD /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:193
+c:0011 p:0075 s:0035 b:0035 l:001370 d:001370 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/backends/base.rb:73
+c:0010 p:0143 s:0031 b:0031 l:0012fc d:0012fc METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/server.rb:162
+c:0009 p:0575 s:0028 b:0028 l:0010e8 d:0010e8 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/controllers/controller.rb:87
+c:0008 p:0342 s:0024 b:0024 l:000023 d:000023 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/runner.rb:200
+c:0007 p:0037 s:0019 b:0019 l:000018 d:000018 METHOD /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/runner.rb:156
+c:0006 p:0042 s:0016 b:0016 l:000015 d:000015 TOP    /var/lib/gems/1.9.1/gems/thin-1.6.4/bin/thin:6
+c:0005 p:---- s:0014 b:0014 l:000013 d:000013 FINISH
+c:0004 p:---- s:0012 b:0012 l:000011 d:000011 CFUNC  :load
+c:0003 p:0167 s:0008 b:0008 l:00082c d:001bfc EVAL   /usr/local/bin/thin:23
+c:0002 p:---- s:0004 b:0004 l:000003 d:000003 FINISH
+c:0001 p:0000 s:0002 b:0002 l:00082c d:00082c TOP   
+
+-- Ruby level backtrace information ----------------------------------------
+/usr/local/bin/thin:23:in `<main>'
+/usr/local/bin/thin:23:in `load'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/bin/thin:6:in `<top (required)>'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/runner.rb:156:in `run!'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/runner.rb:200:in `run_command'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/controllers/controller.rb:87:in `start'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/server.rb:162:in `start'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/backends/base.rb:73:in `start'
+/var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:193:in `run'
+/var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/eventmachine.rb:193:in `run_machine'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:39:in `receive_data'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:53:in `process'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:84:in `pre_process'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:84:in `catch'
+/var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb:86:in `block in pre_process'
+/var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb:50:in `call'
+/var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb:50:in `each'
+/var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb:65:in `block in call'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1461:in `prototype'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1472:in `new'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1479:in `build'
+/var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb:1719:in `setup_default_middleware'
+
+-- C level backtrace information -------------------------------------------
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: thin server (0.0.0.0:3030)
+
+* Loaded features:
+
+    0 enumerator.so
+    1 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/encdb.so
+    2 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/trans/transdb.so
+    3 /usr/lib/ruby/1.9.1/rubygems/defaults.rb
+    4 /usr/lib/ruby/1.9.1/arm-linux-eabihf/rbconfig.rb
+    5 /usr/lib/ruby/1.9.1/rubygems/deprecate.rb
+    6 /usr/lib/ruby/1.9.1/rubygems/exceptions.rb
+    7 /usr/lib/ruby/1.9.1/rubygems/custom_require.rb
+    8 /usr/lib/ruby/1.9.1/rubygems.rb
+    9 /usr/lib/ruby/1.9.1/arm-linux-eabihf/pathname.so
+   10 /usr/lib/ruby/1.9.1/pathname.rb
+   11 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/constants.rb
+   12 /usr/lib/ruby/1.9.1/thread.rb
+   13 /usr/lib/ruby/1.9.1/monitor.rb
+   14 /usr/lib/ruby/1.9.1/arm-linux-eabihf/etc.so
+   15 /usr/lib/ruby/1.9.1/rubygems/config_file.rb
+   16 /usr/lib/ruby/1.9.1/rubygems/version.rb
+   17 /usr/lib/ruby/1.9.1/rubygems/requirement.rb
+   18 /usr/lib/ruby/1.9.1/rubygems/platform.rb
+   19 /usr/lib/ruby/1.9.1/rubygems/specification.rb
+   20 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/rubygems_integration.rb
+   21 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/current_ruby.rb
+   22 /usr/lib/ruby/1.9.1/rubygems/dependency.rb
+   23 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/shared_helpers.rb
+   24 /usr/lib/ruby/1.9.1/fileutils.rb
+   25 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/gem_path_manipulation.rb
+   26 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/gem_helpers.rb
+   27 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/match_platform.rb
+   28 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/rubygems_ext.rb
+   29 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/version.rb
+   30 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler.rb
+   31 /usr/lib/ruby/1.9.1/uri/common.rb
+   32 /usr/lib/ruby/1.9.1/uri/generic.rb
+   33 /usr/lib/ruby/1.9.1/uri/ftp.rb
+   34 /usr/lib/ruby/1.9.1/uri/http.rb
+   35 /usr/lib/ruby/1.9.1/uri/https.rb
+   36 /usr/lib/ruby/1.9.1/uri/ldap.rb
+   37 /usr/lib/ruby/1.9.1/uri/ldaps.rb
+   38 /usr/lib/ruby/1.9.1/uri/mailto.rb
+   39 /usr/lib/ruby/1.9.1/uri.rb
+   40 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/settings.rb
+   41 /usr/lib/ruby/1.9.1/rubygems/path_support.rb
+   42 /usr/lib/ruby/1.9.1/arm-linux-eabihf/strscan.so
+   43 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/source.rb
+   44 /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest.so
+   45 /usr/lib/ruby/1.9.1/digest.rb
+   46 /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/sha1.so
+   47 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/source/path.rb
+   48 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/source/git.rb
+   49 /usr/lib/ruby/1.9.1/rubygems/user_interaction.rb
+   50 /usr/lib/ruby/1.9.1/rubygems/remote_fetcher.rb
+   51 /usr/lib/ruby/1.9.1/rubygems/errors.rb
+   52 /usr/lib/ruby/1.9.1/rubygems/text.rb
+   53 /usr/lib/ruby/1.9.1/rubygems/spec_fetcher.rb
+   54 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/source/rubygems.rb
+   55 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/lockfile_parser.rb
+   56 /usr/lib/ruby/1.9.1/set.rb
+   57 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/definition.rb
+   58 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/dependency.rb
+   59 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/ruby_dsl.rb
+   60 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/dsl.rb
+   61 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/source_list.rb
+   62 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/lazy_specification.rb
+   63 /usr/lib/ruby/1.9.1/tsort.rb
+   64 /usr/lib/ruby/1.9.1/forwardable.rb
+   65 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/spec_set.rb
+   66 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/environment.rb
+   67 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/runtime.rb
+   68 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/dep_proxy.rb
+   69 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/index.rb
+   70 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/remote_specification.rb
+   71 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/endpoint_specification.rb
+   72 /usr/lib/ruby/1.9.1/rubygems/source_index.rb
+   73 /var/lib/gems/1.9.1/gems/bundler-1.10.6/lib/bundler/setup.rb
+   74 /usr/lib/ruby/1.9.1/timeout.rb
+   75 /usr/lib/ruby/1.9.1/arm-linux-eabihf/stringio.so
+   76 /usr/lib/ruby/1.9.1/arm-linux-eabihf/date_core.so
+   77 /usr/lib/ruby/1.9.1/date/format.rb
+   78 /usr/lib/ruby/1.9.1/date.rb
+   79 /usr/lib/ruby/1.9.1/time.rb
+   80 /usr/lib/ruby/1.9.1/arm-linux-eabihf/openssl.so
+   81 /usr/lib/ruby/1.9.1/openssl/bn.rb
+   82 /usr/lib/ruby/1.9.1/openssl/cipher.rb
+   83 /usr/lib/ruby/1.9.1/openssl/config.rb
+   84 /usr/lib/ruby/1.9.1/openssl/digest.rb
+   85 /usr/lib/ruby/1.9.1/openssl/buffering.rb
+   86 /usr/lib/ruby/1.9.1/arm-linux-eabihf/fcntl.so
+   87 /usr/lib/ruby/1.9.1/openssl/ssl-internal.rb
+   88 /usr/lib/ruby/1.9.1/openssl/x509-internal.rb
+   89 /usr/lib/ruby/1.9.1/openssl.rb
+   90 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/rubyeventmachine.so
+   91 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/version.rb
+   92 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/pool.rb
+   93 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/deferrable.rb
+   94 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/future.rb
+   95 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/streamer.rb
+   96 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/spawnable.rb
+   97 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/processes.rb
+   98 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/iterator.rb
+   99 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/buftok.rb
+  100 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/timers.rb
+  101 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/protocols.rb
+  102 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/connection.rb
+  103 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/callback.rb
+  104 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/queue.rb
+  105 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/channel.rb
+  106 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/file_watch.rb
+  107 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/process_watch.rb
+  108 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/tick_loop.rb
+  109 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/resolver.rb
+  110 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/completion.rb
+  111 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/em/threaded_resource.rb
+  112 /usr/lib/ruby/1.9.1/shellwords.rb
+  113 /usr/lib/ruby/1.9.1/arm-linux-eabihf/socket.so
+  114 /usr/lib/ruby/1.9.1/socket.rb
+  115 /usr/lib/ruby/1.9.1/securerandom.rb
+  116 /usr/lib/ruby/1.9.1/resolv.rb
+  117 /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/eventmachine.rb
+  118 /usr/lib/ruby/1.9.1/delegate.rb
+  119 /usr/lib/ruby/1.9.1/tmpdir.rb
+  120 /usr/lib/ruby/1.9.1/tempfile.rb
+  121 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/multipart.rb
+  122 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/utils.rb
+  123 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack.rb
+  124 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/version.rb
+  125 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/statuses.rb
+  126 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/rack/adapter/loader.rb
+  127 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin_parser.so
+  128 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin.rb
+  129 /usr/lib/ruby/1.9.1/logger.rb
+  130 /usr/lib/ruby/1.9.1/optparse.rb
+  131 /usr/lib/ruby/1.9.1/psych/syntax_error.rb
+  132 /usr/lib/ruby/1.9.1/arm-linux-eabihf/psych.so
+  133 /usr/lib/ruby/1.9.1/psych/nodes/node.rb
+  134 /usr/lib/ruby/1.9.1/psych/nodes/stream.rb
+  135 /usr/lib/ruby/1.9.1/psych/nodes/document.rb
+  136 /usr/lib/ruby/1.9.1/psych/nodes/sequence.rb
+  137 /usr/lib/ruby/1.9.1/psych/nodes/scalar.rb
+  138 /usr/lib/ruby/1.9.1/psych/nodes/mapping.rb
+  139 /usr/lib/ruby/1.9.1/psych/nodes/alias.rb
+  140 /usr/lib/ruby/1.9.1/psych/nodes.rb
+  141 /usr/lib/ruby/1.9.1/psych/streaming.rb
+  142 /usr/lib/ruby/1.9.1/psych/visitors/visitor.rb
+  143 /usr/lib/ruby/1.9.1/psych/scalar_scanner.rb
+  144 /usr/lib/ruby/1.9.1/psych/visitors/to_ruby.rb
+  145 /usr/lib/ruby/1.9.1/psych/visitors/emitter.rb
+  146 /usr/lib/ruby/1.9.1/psych/visitors/yaml_tree.rb
+  147 /usr/lib/ruby/1.9.1/psych/json/ruby_events.rb
+  148 /usr/lib/ruby/1.9.1/psych/visitors/json_tree.rb
+  149 /usr/lib/ruby/1.9.1/psych/visitors/depth_first.rb
+  150 /usr/lib/ruby/1.9.1/psych/visitors.rb
+  151 /usr/lib/ruby/1.9.1/psych/handler.rb
+  152 /usr/lib/ruby/1.9.1/psych/tree_builder.rb
+  153 /usr/lib/ruby/1.9.1/psych/parser.rb
+  154 /usr/lib/ruby/1.9.1/psych/omap.rb
+  155 /usr/lib/ruby/1.9.1/psych/set.rb
+  156 /usr/lib/ruby/1.9.1/psych/coder.rb
+  157 /usr/lib/ruby/1.9.1/psych/core_ext.rb
+  158 /usr/lib/ruby/1.9.1/psych/deprecated.rb
+  159 /usr/lib/ruby/1.9.1/psych/stream.rb
+  160 /usr/lib/ruby/1.9.1/psych/json/yaml_events.rb
+  161 /usr/lib/ruby/1.9.1/psych/json/tree_builder.rb
+  162 /usr/lib/ruby/1.9.1/psych/json/stream.rb
+  163 /usr/lib/ruby/1.9.1/psych/handlers/document_stream.rb
+  164 /usr/lib/ruby/1.9.1/psych.rb
+  165 /usr/lib/ruby/1.9.1/yaml.rb
+  166 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/runner.rb
+  167 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/logging.rb
+  168 /usr/lib/ruby/1.9.1/optparse/time.rb
+  169 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/version.rb
+  170 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/exceptions.rb
+  171 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/pid.rb
+  172 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/pidfile.rb
+  173 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/cmdline.rb
+  174 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/daemonize.rb
+  175 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/monitor.rb
+  176 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/pidmem.rb
+  177 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/etc_extension.rb
+  178 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/change_privilege.rb
+  179 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/application.rb
+  180 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/application_group.rb
+  181 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons/controller.rb
+  182 /var/lib/gems/1.9.1/gems/daemons-1.2.3/lib/daemons.rb
+  183 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/daemonizing.rb
+  184 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/server.rb
+  185 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/controllers/controller.rb
+  186 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/controllers/cluster.rb
+  187 /usr/lib/ruby/1.9.1/open3.rb
+  188 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/command.rb
+  189 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/backends/base.rb
+  190 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/backends/tcp_server.rb
+  191 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/builder.rb
+  192 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/command.rb
+  193 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/core_ext/hash_with_indifferent_access.rb
+  194 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/core_ext/ordered_hash.rb
+  195 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/error.rb
+  196 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/invocation.rb
+  197 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/parser/argument.rb
+  198 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/parser/arguments.rb
+  199 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/parser/option.rb
+  200 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/parser/options.rb
+  201 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/parser.rb
+  202 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/shell.rb
+  203 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/util.rb
+  204 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/base.rb
+  205 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor.rb
+  206 /usr/lib/ruby/1.9.1/open-uri.rb
+  207 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/core_ext/io_binary_read.rb
+  208 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/empty_directory.rb
+  209 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/create_file.rb
+  210 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/create_link.rb
+  211 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/directory.rb
+  212 /usr/lib/ruby/1.9.1/erb.rb
+  213 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/file_manipulation.rb
+  214 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions/inject_into_file.rb
+  215 /var/lib/gems/1.9.1/gems/thor-0.18.1/lib/thor/actions.rb
+  216 /var/lib/gems/1.9.1/gems/dashing-1.3.4/lib/dashing/cli.rb
+  217 /usr/lib/ruby/1.9.1/net/protocol.rb
+  218 /usr/lib/ruby/1.9.1/arm-linux-eabihf/zlib.so
+  219 /usr/lib/ruby/1.9.1/net/http.rb
+  220 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/version.rb
+  221 /usr/lib/ruby/1.9.1/ostruct.rb
+  222 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/generic_object.rb
+  223 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/common.rb
+  224 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16be.so
+  225 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16le.so
+  226 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32be.so
+  227 /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32le.so
+  228 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/parser.so
+  229 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/generator.so
+  230 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext.rb
+  231 /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json.rb
+  232 /var/lib/gems/1.9.1/gems/dashing-1.3.4/lib/dashing/downloader.rb
+  233 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb
+  234 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/string.rb
+  235 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/erb.rb
+  236 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/etanni.rb
+  237 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/haml.rb
+  238 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/css.rb
+  239 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/csv.rb
+  240 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/coffee.rb
+  241 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/nokogiri.rb
+  242 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/builder.rb
+  243 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/markaby.rb
+  244 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/liquid.rb
+  245 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/radius.rb
+  246 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/markdown.rb
+  247 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/textile.rb
+  248 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/rdoc.rb
+  249 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/wiki.rb
+  250 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/yajl.rb
+  251 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/asciidoc.rb
+  252 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/plain.rb
+  253 /var/lib/gems/1.9.1/gems/tilt-1.4.1/lib/tilt.rb
+  254 /var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection/version.rb
+  255 /var/lib/gems/1.9.1/gems/rack-protection-1.5.3/lib/rack/protection.rb
+  256 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/request.rb
+  257 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/showexceptions.rb
+  258 /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb
+  259 /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/version.rb
+  260 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/response.rb
+  261 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/body_proxy.rb
+  262 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/commonlogger.rb
+  263 /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/base.rb
+  264 /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra/main.rb
+  265 /var/lib/gems/1.9.1/gems/sinatra-1.4.6/lib/sinatra.rb
+  266 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/version.rb
+  267 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike.rb
+  268 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/eco_template.rb
+  269 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/ejs_template.rb
+  270 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/jst_processor.rb
+  271 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/utils.rb
+  272 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/engines.rb
+  273 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/mime.rb
+  274 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/mime.rb
+  275 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/processor.rb
+  276 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/processing.rb
+  277 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/compressing.rb
+  278 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/paths.rb
+  279 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike/normalized_array.rb
+  280 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike/extensions.rb
+  281 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike/index.rb
+  282 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike/paths.rb
+  283 /var/lib/gems/1.9.1/gems/hike-1.2.3/lib/hike/trail.rb
+  284 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/directive_processor.rb
+  285 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/safety_colons.rb
+  286 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/charset_normalizer.rb
+  287 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/sass_compressor.rb
+  288 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/yui_compressor.rb
+  289 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/closure_compressor.rb
+  290 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/uglifier_compressor.rb
+  291 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/sass_template.rb
+  292 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/scss_template.rb
+  293 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets.rb
+  294 /var/lib/gems/1.9.1/gems/sinatra-contrib-1.4.6/lib/sinatra/engine_tracking.rb
+  295 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/require_relative_dir.rb
+  296 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/alias_method.rb
+  297 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/alias_method_chain.rb
+  298 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/arguments.rb
+  299 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/extreme_object.rb
+  300 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/io.rb
+  301 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/make_block_optional.rb
+  302 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/path.rb
+  303 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/std_lib.rb
+  304 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools/suppress_verbose_warnings.rb
+  305 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/tools.rb
+  306 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/version.rb
+  307 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/std_lib.rb
+  308 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/each_byte.rb
+  309 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/bytes.rb
+  310 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/each_char.rb
+  311 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/chars.rb
+  312 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/each.rb
+  313 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/each_line.rb
+  314 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/getbyte.rb
+  315 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/lines.rb
+  316 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf/readbyte.rb
+  317 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/argf.rb
+  318 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/collect.rb
+  319 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/combination.rb
+  320 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/cycle.rb
+  321 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/delete_if.rb
+  322 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/each.rb
+  323 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/each_index.rb
+  324 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/index.rb
+  325 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/find_index.rb
+  326 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/flatten.rb
+  327 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/map.rb
+  328 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/permutation.rb
+  329 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/pop.rb
+  330 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/product.rb
+  331 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/reject.rb
+  332 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/reverse_each.rb
+  333 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/rindex.rb
+  334 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/select.rb
+  335 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/shift.rb
+  336 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array/shuffle.rb
+  337 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/array.rb
+  338 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/binding/eval.rb
+  339 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/binding.rb
+  340 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/dir/each.rb
+  341 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/dir/foreach.rb
+  342 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/dir.rb
+  343 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/count.rb
+  344 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/cycle.rb
+  345 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/detect.rb
+  346 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/drop.rb
+  347 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/drop_while.rb
+  348 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/each_cons.rb
+  349 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/each_slice.rb
+  350 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/each_with_index.rb
+  351 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/entries.rb
+  352 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/find.rb
+  353 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/find_all.rb
+  354 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/find_index.rb
+  355 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/first.rb
+  356 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/group_by.rb
+  357 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/inject.rb
+  358 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/max_by.rb
+  359 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/min_by.rb
+  360 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/minmax.rb
+  361 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/minmax_by.rb
+  362 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/none.rb
+  363 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/one.rb
+  364 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/partition.rb
+  365 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/reduce.rb
+  366 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/reject.rb
+  367 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/reverse_each.rb
+  368 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/select.rb
+  369 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/sort_by.rb
+  370 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/take.rb
+  371 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/take_while.rb
+  372 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable/to_a.rb
+  373 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerable.rb
+  374 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerator/each.rb
+  375 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerator/next.rb
+  376 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerator/rewind.rb
+  377 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerator/with_index.rb
+  378 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/enumerator.rb
+  379 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/delete_if.rb
+  380 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/each.rb
+  381 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/each_key.rb
+  382 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/each_pair.rb
+  383 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/each_value.rb
+  384 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/reject.rb
+  385 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env/select.rb
+  386 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/env.rb
+  387 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/fixnum/div.rb
+  388 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/fixnum/fdiv.rb
+  389 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/fixnum.rb
+  390 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/float/fdiv.rb
+  391 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/float.rb
+  392 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/gc/stress.rb
+  393 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/gc.rb
+  394 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/constructor.rb
+  395 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/delete_if.rb
+  396 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/each.rb
+  397 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/each_key.rb
+  398 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/each_pair.rb
+  399 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/each_value.rb
+  400 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/hash.rb
+  401 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/eql.rb
+  402 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/reject.rb
+  403 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash/select.rb
+  404 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/hash.rb
+  405 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/downto.rb
+  406 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/even.rb
+  407 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/odd.rb
+  408 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/ord.rb
+  409 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/pred.rb
+  410 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/times.rb
+  411 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer/upto.rb
+  412 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/integer.rb
+  413 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/each_byte.rb
+  414 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/bytes.rb
+  415 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/each_char.rb
+  416 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/chars.rb
+  417 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/each.rb
+  418 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/each_line.rb
+  419 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/foreach.rb
+  420 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/getbyte.rb
+  421 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/lines.rb
+  422 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io/readbyte.rb
+  423 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/io.rb
+  424 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/kernel/__method__.rb
+  425 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/kernel/instance_exec.rb
+  426 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/kernel/tap.rb
+  427 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/kernel.rb
+  428 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/method/name.rb
+  429 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/method.rb
+  430 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/module/module_exec.rb
+  431 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/module/class_exec.rb
+  432 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/module.rb
+  433 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/numeric/step.rb
+  434 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/numeric.rb
+  435 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/object_space/each_object.rb
+  436 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/object_space.rb
+  437 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/process/exec.rb
+  438 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/process.rb
+  439 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/range/each.rb
+  440 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/range/step.rb
+  441 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/range.rb
+  442 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/regexp/union.rb
+  443 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/regexp.rb
+  444 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/stdlib/tmpdir.rb
+  445 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/stdlib.rb
+  446 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/stop_iteration.rb
+  447 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/each_byte.rb
+  448 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/bytes.rb
+  449 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/bytesize.rb
+  450 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/each.rb
+  451 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/each_char.rb
+  452 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/each_line.rb
+  453 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/end_with.rb
+  454 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/lines.rb
+  455 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/partition.rb
+  456 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/rpartition.rb
+  457 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/start_with.rb
+  458 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string/upto.rb
+  459 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/string.rb
+  460 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/struct/each.rb
+  461 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/struct/each_pair.rb
+  462 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/struct.rb
+  463 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/symbol/to_proc.rb
+  464 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7/symbol.rb
+  465 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.7.rb
+  466 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.8.rb
+  467 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/array/sample.rb
+  468 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/array/try_convert.rb
+  469 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/array.rb
+  470 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/dir/to_path.rb
+  471 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/dir.rb
+  472 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerable/each_with_index.rb
+  473 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerable/each_with_object.rb
+  474 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerable.rb
+  475 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerator/new.rb
+  476 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerator/with_object.rb
+  477 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/enumerator.rb
+  478 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/env/key.rb
+  479 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/env.rb
+  480 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/atime.rb
+  481 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/basename.rb
+  482 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/binary.rb
+  483 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/blockdev.rb
+  484 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/chardev.rb
+  485 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/chmod.rb
+  486 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/chown.rb
+  487 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/ctime.rb
+  488 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/delete.rb
+  489 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/directory.rb
+  490 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/dirname.rb
+  491 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/executable.rb
+  492 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/executable_real.rb
+  493 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/exist.rb
+  494 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/exists.rb
+  495 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/expand_path.rb
+  496 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/extname.rb
+  497 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/file.rb
+  498 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/ftype.rb
+  499 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/grpowned.rb
+  500 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/join.rb
+  501 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/lchmod.rb
+  502 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/lchown.rb
+  503 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/link.rb
+  504 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/lstat.rb
+  505 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/mtime.rb
+  506 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/new.rb
+  507 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/open.rb
+  508 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/owned.rb
+  509 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/pipe.rb
+  510 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/readable.rb
+  511 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/readable_real.rb
+  512 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/readlink.rb
+  513 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/rename.rb
+  514 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/setgid.rb
+  515 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/setuid.rb
+  516 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/size.rb
+  517 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/socket.rb
+  518 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/split.rb
+  519 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/stat.rb
+  520 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/sticky.rb
+  521 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/symlink.rb
+  522 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/to_path.rb
+  523 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/truncate.rb
+  524 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/unlink.rb
+  525 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/writable.rb
+  526 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/writable_real.rb
+  527 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file/zero.rb
+  528 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/file.rb
+  529 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/float/round.rb
+  530 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/float.rb
+  531 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash/assoc.rb
+  532 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash/default_proc.rb
+  533 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash/key.rb
+  534 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash/rassoc.rb
+  535 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash/try_convert.rb
+  536 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/hash.rb
+  537 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/integer/magnitude.rb
+  538 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/integer/round.rb
+  539 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/integer.rb
+  540 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/io/binread.rb
+  541 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/io/open.rb
+  542 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/io/try_convert.rb
+  543 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/io/ungetbyte.rb
+  544 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/io.rb
+  545 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel/__callee__.rb
+  546 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel/define_singleton_method.rb
+  547 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel/public_method.rb
+  548 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel/public_send.rb
+  549 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel/require_relative.rb
+  550 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/kernel.rb
+  551 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/math/log.rb
+  552 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/math/log2.rb
+  553 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/math.rb
+  554 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/numeric/round.rb
+  555 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/numeric.rb
+  556 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/proc/case_compare.rb
+  557 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/proc/curry.rb
+  558 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/proc/lambda.rb
+  559 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/proc/yield.rb
+  560 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/proc.rb
+  561 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/range/cover.rb
+  562 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/range.rb
+  563 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/regexp/try_convert.rb
+  564 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/regexp.rb
+  565 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/stdlib.rb
+  566 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/ascii_only.rb
+  567 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/chr.rb
+  568 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/clear.rb
+  569 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/codepoints.rb
+  570 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/each_codepoint.rb
+  571 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/getbyte.rb
+  572 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/ord.rb
+  573 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/setbyte.rb
+  574 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string/try_convert.rb
+  575 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/string.rb
+  576 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/capitalize.rb
+  577 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/casecmp.rb
+  578 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/comparable.rb
+  579 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/comparison.rb
+  580 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/downcase.rb
+  581 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/element_reference.rb
+  582 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/empty.rb
+  583 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/length.rb
+  584 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/match.rb
+  585 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/succ.rb
+  586 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/next.rb
+  587 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/size.rb
+  588 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/swapcase.rb
+  589 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol/upcase.rb
+  590 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1/symbol.rb
+  591 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.1.rb
+  592 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/keep_if.rb
+  593 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/product.rb
+  594 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/repeated_combination.rb
+  595 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/repeated_permutation.rb
+  596 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/rotate.rb
+  597 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/select.rb
+  598 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/sort_by.rb
+  599 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array/uniq.rb
+  600 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/array.rb
+  601 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/complex/to_r.rb
+  602 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/complex.rb
+  603 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/dir/home.rb
+  604 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/dir.rb
+  605 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable/chunk.rb
+  606 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable/flat_map.rb
+  607 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable/collect_concat.rb
+  608 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable/each_entry.rb
+  609 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable/slice_before.rb
+  610 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/enumerable.rb
+  611 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/float/infinity.rb
+  612 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/float/nan.rb
+  613 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/float.rb
+  614 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/hash/keep_if.rb
+  615 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/hash/select.rb
+  616 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/hash.rb
+  617 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/kernel/singleton_class.rb
+  618 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/kernel.rb
+  619 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/random.rb
+  620 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/stdlib/set.rb
+  621 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2/stdlib.rb
+  622 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.2.rb
+  623 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/file/null.rb
+  624 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/file.rb
+  625 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/io/advise.rb
+  626 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/io/binwrite.rb
+  627 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/io/write.rb
+  628 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/io.rb
+  629 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/string/byteslice.rb
+  630 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/string/prepend.rb
+  631 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3/string.rb
+  632 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.3.rb
+  633 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/1.9.rb
+  634 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/array/bsearch.rb
+  635 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/array.rb
+  636 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/enumerable/lazy.rb
+  637 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/enumerable.rb
+  638 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/enumerator/lazy.rb
+  639 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/enumerator.rb
+  640 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/env/to_h.rb
+  641 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/env.rb
+  642 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/hash/default_proc.rb
+  643 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/hash/to_h.rb
+  644 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/hash.rb
+  645 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/nil/to_h.rb
+  646 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/nil.rb
+  647 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/range/bsearch.rb
+  648 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/range/size.rb
+  649 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/range.rb
+  650 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/stdlib/ostruct.rb
+  651 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/stdlib.rb
+  652 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/struct/to_h.rb
+  653 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0/struct.rb
+  654 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.0.rb
+  655 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.0.rb
+  656 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/enumerable/to_h.rb
+  657 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/array/to_h.rb
+  658 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/array.rb
+  659 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/bignum/bit_length.rb
+  660 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/bignum.rb
+  661 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/enumerable.rb
+  662 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/fixnum/bit_length.rb
+  663 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/fixnum.rb
+  664 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/module/include.rb
+  665 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0/module.rb
+  666 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.0.rb
+  667 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/2.1.rb
+  668 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/array.rb
+  669 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/enumerable.rb
+  670 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/hash.rb
+  671 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/kernel.rb
+  672 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/module.rb
+  673 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails/string.rb
+  674 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports/rails.rb
+  675 /var/lib/gems/1.9.1/gems/backports-3.6.6/lib/backports.rb
+  676 /var/lib/gems/1.9.1/gems/sinatra-contrib-1.4.6/lib/sinatra/capture.rb
+  677 /var/lib/gems/1.9.1/gems/sinatra-contrib-1.4.6/lib/sinatra/content_for.rb
+  678 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/version.rb
+  679 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/rtime.rb
+  680 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/ruby_core_support.rb
+  681 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/offset_rationals.rb
+  682 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/time_or_datetime.rb
+  683 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_definition.rb
+  684 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_offset.rb
+  685 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition.rb
+  686 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_transition_definition.rb
+  687 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_index_definition.rb
+  688 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_info.rb
+  689 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone_info.rb
+  690 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone_info.rb
+  691 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/transition_data_timezone_info.rb
+  692 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_timezone_info.rb
+  693 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/data_source.rb
+  694 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/ruby_data_source.rb
+  695 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_data_source.rb
+  696 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_period.rb
+  697 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe/version.rb
+  698 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe/synchronized_delegator.rb
+  699 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe.rb
+  700 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe/non_concurrent_cache_backend.rb
+  701 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe/mri_cache_backend.rb
+  702 /var/lib/gems/1.9.1/gems/thread_safe-0.3.5/lib/thread_safe/cache.rb
+  703 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone.rb
+  704 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/info_timezone.rb
+  705 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/data_timezone.rb
+  706 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/linked_timezone.rb
+  707 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/timezone_proxy.rb
+  708 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/country_index_definition.rb
+  709 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/country_info.rb
+  710 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/ruby_country_info.rb
+  711 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/zoneinfo_country_info.rb
+  712 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/country.rb
+  713 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo/country_timezone.rb
+  714 /var/lib/gems/1.9.1/gems/tzinfo-1.2.2/lib/tzinfo.rb
+  715 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/cronline.rb
+  716 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb
+  717 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobqueues.rb
+  718 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb
+  719 /var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/scheduler.rb
+  720 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/version.rb
+  721 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/module.rb
+  722 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/encoding.rb
+  723 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/runtime.rb
+  724 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/disabled_runtime.rb
+  725 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/external_runtime.rb
+  726 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/johnson_runtime.rb
+  727 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/mustang_runtime.rb
+  728 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/ruby_racer_runtime.rb
+  729 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/ruby_rhino_runtime.rb
+  730 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/runtimes.rb
+  731 /var/lib/gems/1.9.1/gems/execjs-2.0.2/lib/execjs.rb
+  732 /var/lib/gems/1.9.1/gems/coffee-script-source-1.9.1.1/lib/coffee_script/source.rb
+  733 /var/lib/gems/1.9.1/gems/coffee-script-2.2.0/lib/coffee_script.rb
+  734 /var/lib/gems/1.9.1/gems/coffee-script-2.2.0/lib/coffee-script.rb
+  735 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/root.rb
+  736 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/util/subset_map.rb
+  737 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/util/multibyte_string_scanner.rb
+  738 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/util.rb
+  739 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/version.rb
+  740 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/logger/log_level.rb
+  741 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/logger/base.rb
+  742 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/logger.rb
+  743 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/cache_stores/base.rb
+  744 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/cache_stores/filesystem.rb
+  745 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/cache_stores/memory.rb
+  746 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/cache_stores/chain.rb
+  747 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/cache_stores.rb
+  748 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/node.rb
+  749 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/root_node.rb
+  750 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/rule_node.rb
+  751 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/comment_node.rb
+  752 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/prop_node.rb
+  753 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/directive_node.rb
+  754 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/media_node.rb
+  755 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/supports_node.rb
+  756 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/css_import_node.rb
+  757 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/variable_node.rb
+  758 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/mixin_def_node.rb
+  759 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/mixin_node.rb
+  760 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/trace_node.rb
+  761 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/content_node.rb
+  762 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/function_node.rb
+  763 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/return_node.rb
+  764 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/extend_node.rb
+  765 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/if_node.rb
+  766 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/while_node.rb
+  767 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/for_node.rb
+  768 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/each_node.rb
+  769 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/debug_node.rb
+  770 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/warn_node.rb
+  771 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/import_node.rb
+  772 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/charset_node.rb
+  773 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb
+  774 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb
+  775 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/cssize.rb
+  776 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/extend.rb
+  777 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/convert.rb
+  778 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/to_css.rb
+  779 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/deep_copy.rb
+  780 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/set_options.rb
+  781 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/check_nesting.rb
+  782 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector/simple.rb
+  783 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector/abstract_sequence.rb
+  784 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector/comma_sequence.rb
+  785 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector/sequence.rb
+  786 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector/simple_sequence.rb
+  787 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/selector.rb
+  788 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/environment.rb
+  789 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/node.rb
+  790 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/variable.rb
+  791 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/functions.rb
+  792 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/funcall.rb
+  793 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/number.rb
+  794 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/color.rb
+  795 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/bool.rb
+  796 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/null.rb
+  797 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/list.rb
+  798 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/arg_list.rb
+  799 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/literal.rb
+  800 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/string.rb
+  801 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/unary_operation.rb
+  802 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/interpolation.rb
+  803 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/string_interpolation.rb
+  804 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/operation.rb
+  805 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/rx.rb
+  806 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/lexer.rb
+  807 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/parser.rb
+  808 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script.rb
+  809 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/script_lexer.rb
+  810 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/script_parser.rb
+  811 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb
+  812 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/css_lexer.rb
+  813 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/css_parser.rb
+  814 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/static_parser.rb
+  815 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/css_parser.rb
+  816 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss.rb
+  817 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/error.rb
+  818 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/importers/base.rb
+  819 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/importers/filesystem.rb
+  820 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/importers.rb
+  821 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/shared.rb
+  822 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/media.rb
+  823 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/supports.rb
+  824 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb
+  825 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/railtie.rb
+  826 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass.rb
+  827 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/asset_attributes.rb
+  828 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/asset.rb
+  829 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/errors.rb
+  830 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/bundled_asset.rb
+  831 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/caching.rb
+  832 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/processed_asset.rb
+  833 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/server.rb
+  834 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/static_asset.rb
+  835 /var/lib/gems/1.9.1/gems/multi_json-1.11.2/lib/multi_json/options.rb
+  836 /var/lib/gems/1.9.1/gems/multi_json-1.11.2/lib/multi_json/version.rb
+  837 /var/lib/gems/1.9.1/gems/multi_json-1.11.2/lib/multi_json/adapter_error.rb
+  838 /var/lib/gems/1.9.1/gems/multi_json-1.11.2/lib/multi_json/parse_error.rb
+  839 /var/lib/gems/1.9.1/gems/multi_json-1.11.2/lib/multi_json.rb
+  840 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/base.rb
+  841 /usr/lib/ruby/1.9.1/base64.rb
+  842 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/context.rb
+  843 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/index.rb
+  844 /var/lib/gems/1.9.1/gems/sprockets-2.10.2/lib/sprockets/environment.rb
+  845 /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/md5.so
+  846 /home/pi/decibel_monitor/jobs/adverage.rb
+  847 /usr/lib/ruby/1.9.1/arm-linux-eabihf/bigdecimal.so
+  848 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/version.rb
+  849 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/error.rb
+  850 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/mysql2.so
+  851 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/result.rb
+  852 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb
+  853 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/field.rb
+  854 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/statement.rb
+  855 /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2.rb
+  856 /home/pi/decibel_monitor/jobs/monitor.rb
+  857 /home/pi/decibel_monitor/jobs/adverage2.rb
+  858 /var/lib/gems/1.9.1/gems/dashing-1.3.4/lib/dashing/app.rb
+  859 /var/lib/gems/1.9.1/gems/dashing-1.3.4/lib/dashing.rb
+  860 /var/lib/gems/1.9.1/gems/rack-1.5.5/lib/rack/urlmap.rb
+  861 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/connection.rb
+  862 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/request.rb
+  863 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/response.rb
+  864 /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin/headers.rb
+
+* Process memory map:
+
+00008000-00009000 r-xp 00000000 b3:06 266512     /usr/bin/ruby1.9.1
+00010000-00011000 r--p 00000000 b3:06 266512     /usr/bin/ruby1.9.1
+00011000-00012000 rw-p 00001000 b3:06 266512     /usr/bin/ruby1.9.1
+013bc000-021a9000 rw-p 00000000 00:00 0          [heap]
+021a9000-02993000 rw-p 00000000 00:00 0          [heap]
+75500000-75522000 rw-p 00000000 00:00 0 
+75522000-75600000 ---p 00000000 00:00 0 
+756a6000-756b6000 r-xp 00000000 b3:06 261439     /lib/arm-linux-gnueabihf/libresolv-2.13.so
+756b6000-756b7000 r--p 00010000 b3:06 261439     /lib/arm-linux-gnueabihf/libresolv-2.13.so
+756b7000-756b8000 rw-p 00011000 b3:06 261439     /lib/arm-linux-gnueabihf/libresolv-2.13.so
+756b8000-756ba000 rw-p 00000000 00:00 0 
+756ba000-756be000 r-xp 00000000 b3:06 261410     /lib/arm-linux-gnueabihf/libnss_dns-2.13.so
+756be000-756c5000 ---p 00004000 b3:06 261410     /lib/arm-linux-gnueabihf/libnss_dns-2.13.so
+756c5000-756c6000 r--p 00003000 b3:06 261410     /lib/arm-linux-gnueabihf/libnss_dns-2.13.so
+756c6000-756c7000 rw-p 00004000 b3:06 261410     /lib/arm-linux-gnueabihf/libnss_dns-2.13.so
+756c7000-756c9000 r-xp 00000000 b3:06 261387     /lib/libnss_mdns4_minimal.so.2
+756c9000-756d0000 ---p 00002000 b3:06 261387     /lib/libnss_mdns4_minimal.so.2
+756d0000-756d1000 rw-p 00001000 b3:06 261387     /lib/libnss_mdns4_minimal.so.2
+756d1000-756d2000 ---p 00000000 00:00 0 
+756d2000-757d2000 rw-p 00000000 00:00 0 
+757d2000-757d3000 ---p 00000000 00:00 0 
+757d3000-758d3000 rw-p 00000000 00:00 0 
+758d3000-758dd000 r-xp 00000000 b3:06 261509     /lib/arm-linux-gnueabihf/libnss_files-2.13.so
+758dd000-758e4000 ---p 0000a000 b3:06 261509     /lib/arm-linux-gnueabihf/libnss_files-2.13.so
+758e4000-758e5000 r--p 00009000 b3:06 261509     /lib/arm-linux-gnueabihf/libnss_files-2.13.so
+758e5000-758e6000 rw-p 0000a000 b3:06 261509     /lib/arm-linux-gnueabihf/libnss_files-2.13.so
+758f5000-758f6000 ---p 00000000 00:00 0 
+758f6000-760f5000 rw-p 00000000 00:00 0 
+760f5000-76381000 r-xp 00000000 b3:06 263938     /usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18.0.0
+76381000-76389000 ---p 0028c000 b3:06 263938     /usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18.0.0
+76389000-7638c000 r--p 0028c000 b3:06 263938     /usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18.0.0
+7638c000-76400000 rw-p 0028f000 b3:06 263938     /usr/lib/arm-linux-gnueabihf/libmysqlclient.so.18.0.0
+76400000-76403000 rw-p 00000000 00:00 0 
+76403000-7640f000 r-xp 00000000 b3:06 263932     /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/mysql2.so
+7640f000-76416000 ---p 0000c000 b3:06 263932     /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/mysql2.so
+76416000-76417000 r--p 0000b000 b3:06 263932     /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/mysql2.so
+76417000-76418000 rw-p 0000c000 b3:06 263932     /var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/mysql2.so
+76418000-76426000 r-xp 00000000 b3:06 274909     /usr/lib/ruby/1.9.1/arm-linux-eabihf/bigdecimal.so
+76426000-7642d000 ---p 0000e000 b3:06 274909     /usr/lib/ruby/1.9.1/arm-linux-eabihf/bigdecimal.so
+7642d000-7642e000 r--p 0000d000 b3:06 274909     /usr/lib/ruby/1.9.1/arm-linux-eabihf/bigdecimal.so
+7642e000-7642f000 rw-p 0000e000 b3:06 274909     /usr/lib/ruby/1.9.1/arm-linux-eabihf/bigdecimal.so
+7642f000-76431000 r-xp 00000000 b3:06 274895     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/md5.so
+76431000-76438000 ---p 00002000 b3:06 274895     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/md5.so
+76438000-76439000 r--p 00001000 b3:06 274895     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/md5.so
+76439000-7643a000 rw-p 00002000 b3:06 274895     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/md5.so
+7643a000-7643b000 ---p 00000000 00:00 0 
+7643b000-7653b000 rw-p 00000000 00:00 0          [stack:28974]
+7653b000-76541000 r-xp 00000000 b3:06 183585     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/generator.so
+76541000-76548000 ---p 00006000 b3:06 183585     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/generator.so
+76548000-76549000 r--p 00005000 b3:06 183585     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/generator.so
+76549000-7654a000 rw-p 00006000 b3:06 183585     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/generator.so
+7654a000-7654b000 r-xp 00000000 b3:06 8702       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32le.so
+7654b000-76552000 ---p 00001000 b3:06 8702       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32le.so
+76552000-76553000 r--p 00000000 b3:06 8702       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32le.so
+76553000-76554000 rw-p 00001000 b3:06 8702       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32le.so
+76554000-76555000 r-xp 00000000 b3:06 8744       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32be.so
+76555000-7655c000 ---p 00001000 b3:06 8744       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32be.so
+7655c000-7655d000 r--p 00000000 b3:06 8744       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32be.so
+7655d000-7655e000 rw-p 00001000 b3:06 8744       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_32be.so
+7655e000-7655f000 r-xp 00000000 b3:06 8753       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16le.so
+7655f000-76566000 ---p 00001000 b3:06 8753       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16le.so
+76566000-76567000 r--p 00000000 b3:06 8753       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16le.so
+76567000-76568000 rw-p 00001000 b3:06 8753       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16le.so
+76568000-76569000 r-xp 00000000 b3:06 8712       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16be.so
+76569000-76570000 ---p 00001000 b3:06 8712       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16be.so
+76570000-76571000 r--p 00000000 b3:06 8712       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16be.so
+76571000-76572000 rw-p 00001000 b3:06 8712       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/utf_16be.so
+76572000-7657c000 r-xp 00000000 b3:06 274904     /usr/lib/ruby/1.9.1/arm-linux-eabihf/zlib.so
+7657c000-76583000 ---p 0000a000 b3:06 274904     /usr/lib/ruby/1.9.1/arm-linux-eabihf/zlib.so
+76583000-76584000 r--p 00009000 b3:06 274904     /usr/lib/ruby/1.9.1/arm-linux-eabihf/zlib.so
+76584000-76585000 rw-p 0000a000 b3:06 274904     /usr/lib/ruby/1.9.1/arm-linux-eabihf/zlib.so
+76585000-7659e000 r-xp 00000000 b3:06 268435     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.2
+7659e000-765a5000 ---p 00019000 b3:06 268435     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.2
+765a5000-765a6000 r--p 00018000 b3:06 268435     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.2
+765a6000-765a7000 rw-p 00019000 b3:06 268435     /usr/lib/arm-linux-gnueabihf/libyaml-0.so.2.0.2
+765a8000-765ad000 r-xp 00000000 b3:06 183583     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/parser.so
+765ad000-765b4000 ---p 00005000 b3:06 183583     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/parser.so
+765b4000-765b5000 r--p 00004000 b3:06 183583     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/parser.so
+765b5000-765b6000 rw-p 00005000 b3:06 183583     /var/lib/gems/1.9.1/gems/json-1.8.3/lib/json/ext/parser.so
+765b6000-765bb000 r-xp 00000000 b3:06 274927     /usr/lib/ruby/1.9.1/arm-linux-eabihf/psych.so
+765bb000-765c2000 ---p 00005000 b3:06 274927     /usr/lib/ruby/1.9.1/arm-linux-eabihf/psych.so
+765c2000-765c3000 r--p 00004000 b3:06 274927     /usr/lib/ruby/1.9.1/arm-linux-eabihf/psych.so
+765c3000-765c4000 rw-p 00005000 b3:06 274927     /usr/lib/ruby/1.9.1/arm-linux-eabihf/psych.so
+765c4000-765e3000 r-xp 00000000 b3:06 274905     /usr/lib/ruby/1.9.1/arm-linux-eabihf/socket.so
+765e3000-765ea000 ---p 0001f000 b3:06 274905     /usr/lib/ruby/1.9.1/arm-linux-eabihf/socket.so
+765ea000-765eb000 r--p 0001e000 b3:06 274905     /usr/lib/ruby/1.9.1/arm-linux-eabihf/socket.so
+765eb000-765ec000 rw-p 0001f000 b3:06 274905     /usr/lib/ruby/1.9.1/arm-linux-eabihf/socket.so
+765ec000-766ab000 r-xp 00000000 b3:06 268665     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.19
+766ab000-766b2000 ---p 000bf000 b3:06 268665     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.19
+766b2000-766b6000 r--p 000be000 b3:06 268665     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.19
+766b6000-766b8000 rw-p 000c2000 b3:06 268665     /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.19
+766b8000-766be000 rw-p 00000000 00:00 0 
+766bf000-766c4000 r-xp 00000000 b3:06 169571     /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin_parser.so
+766c4000-766cb000 ---p 00005000 b3:06 169571     /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin_parser.so
+766cb000-766cc000 r--p 00004000 b3:06 169571     /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin_parser.so
+766cc000-766cd000 rw-p 00005000 b3:06 169571     /var/lib/gems/1.9.1/gems/thin-1.6.4/lib/thin_parser.so
+766cd000-766ee000 r-xp 00000000 b3:06 169465     /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/rubyeventmachine.so
+766ee000-766f6000 ---p 00021000 b3:06 169465     /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/rubyeventmachine.so
+766f6000-766f7000 r--p 00021000 b3:06 169465     /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/rubyeventmachine.so
+766f7000-766f9000 rw-p 00022000 b3:06 169465     /var/lib/gems/1.9.1/gems/eventmachine-1.0.8/lib/rubyeventmachine.so
+766f9000-7670d000 r-xp 00000000 b3:06 261565     /lib/arm-linux-gnueabihf/libz.so.1.2.7
+7670d000-76715000 ---p 00014000 b3:06 261565     /lib/arm-linux-gnueabihf/libz.so.1.2.7
+76715000-76716000 r--p 00014000 b3:06 261565     /lib/arm-linux-gnueabihf/libz.so.1.2.7
+76716000-76717000 rw-p 00015000 b3:06 261565     /lib/arm-linux-gnueabihf/libz.so.1.2.7
+76717000-7685a000 r-xp 00000000 b3:06 289139     /usr/lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+7685a000-76862000 ---p 00143000 b3:06 289139     /usr/lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76862000-7686f000 r--p 00143000 b3:06 289139     /usr/lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+7686f000-76877000 rw-p 00150000 b3:06 289139     /usr/lib/arm-linux-gnueabihf/libcrypto.so.1.0.0
+76877000-7687b000 rw-p 00000000 00:00 0 
+7687b000-768bf000 r-xp 00000000 b3:06 289140     /usr/lib/arm-linux-gnueabihf/libssl.so.1.0.0
+768bf000-768c6000 ---p 00044000 b3:06 289140     /usr/lib/arm-linux-gnueabihf/libssl.so.1.0.0
+768c6000-768c8000 r--p 00043000 b3:06 289140     /usr/lib/arm-linux-gnueabihf/libssl.so.1.0.0
+768c8000-768cc000 rw-p 00045000 b3:06 289140     /usr/lib/arm-linux-gnueabihf/libssl.so.1.0.0
+768d1000-768d2000 r-xp 00000000 b3:06 274920     /usr/lib/ruby/1.9.1/arm-linux-eabihf/fcntl.so
+768d2000-768d9000 ---p 00001000 b3:06 274920     /usr/lib/ruby/1.9.1/arm-linux-eabihf/fcntl.so
+768d9000-768da000 r--p 00000000 b3:06 274920     /usr/lib/ruby/1.9.1/arm-linux-eabihf/fcntl.so
+768da000-768db000 rw-p 00001000 b3:06 274920     /usr/lib/ruby/1.9.1/arm-linux-eabihf/fcntl.so
+768db000-7691c000 r-xp 00000000 b3:06 274925     /usr/lib/ruby/1.9.1/arm-linux-eabihf/openssl.so
+7691c000-76923000 ---p 00041000 b3:06 274925     /usr/lib/ruby/1.9.1/arm-linux-eabihf/openssl.so
+76923000-76924000 r--p 00040000 b3:06 274925     /usr/lib/ruby/1.9.1/arm-linux-eabihf/openssl.so
+76924000-76926000 rw-p 00041000 b3:06 274925     /usr/lib/ruby/1.9.1/arm-linux-eabihf/openssl.so
+76926000-7694d000 r-xp 00000000 b3:06 274888     /usr/lib/ruby/1.9.1/arm-linux-eabihf/date_core.so
+7694d000-76955000 ---p 00027000 b3:06 274888     /usr/lib/ruby/1.9.1/arm-linux-eabihf/date_core.so
+76955000-76956000 r--p 00027000 b3:06 274888     /usr/lib/ruby/1.9.1/arm-linux-eabihf/date_core.so
+76956000-76957000 rw-p 00028000 b3:06 274888     /usr/lib/ruby/1.9.1/arm-linux-eabihf/date_core.so
+76957000-7695c000 r-xp 00000000 b3:06 274926     /usr/lib/ruby/1.9.1/arm-linux-eabihf/stringio.so
+7695c000-76963000 ---p 00005000 b3:06 274926     /usr/lib/ruby/1.9.1/arm-linux-eabihf/stringio.so
+76963000-76964000 r--p 00004000 b3:06 274926     /usr/lib/ruby/1.9.1/arm-linux-eabihf/stringio.so
+76964000-76965000 rw-p 00005000 b3:06 274926     /usr/lib/ruby/1.9.1/arm-linux-eabihf/stringio.so
+76965000-76967000 r-xp 00000000 b3:06 274922     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest.so
+76967000-7696f000 ---p 00002000 b3:06 274922     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest.so
+7696f000-76970000 r--p 00002000 b3:06 274922     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest.so
+76970000-76971000 rw-p 00003000 b3:06 274922     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest.so
+76971000-76974000 r-xp 00000000 b3:06 274894     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/sha1.so
+76974000-7697b000 ---p 00003000 b3:06 274894     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/sha1.so
+7697b000-7697c000 r--p 00002000 b3:06 274894     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/sha1.so
+7697c000-7697d000 rw-p 00003000 b3:06 274894     /usr/lib/ruby/1.9.1/arm-linux-eabihf/digest/sha1.so
+7697d000-76981000 r-xp 00000000 b3:06 274911     /usr/lib/ruby/1.9.1/arm-linux-eabihf/strscan.so
+76981000-76988000 ---p 00004000 b3:06 274911     /usr/lib/ruby/1.9.1/arm-linux-eabihf/strscan.so
+76988000-76989000 r--p 00003000 b3:06 274911     /usr/lib/ruby/1.9.1/arm-linux-eabihf/strscan.so
+76989000-7698a000 rw-p 00004000 b3:06 274911     /usr/lib/ruby/1.9.1/arm-linux-eabihf/strscan.so
+7698a000-7698c000 r-xp 00000000 b3:06 274930     /usr/lib/ruby/1.9.1/arm-linux-eabihf/etc.so
+7698c000-76993000 ---p 00002000 b3:06 274930     /usr/lib/ruby/1.9.1/arm-linux-eabihf/etc.so
+76993000-76994000 r--p 00001000 b3:06 274930     /usr/lib/ruby/1.9.1/arm-linux-eabihf/etc.so
+76994000-76995000 rw-p 00002000 b3:06 274930     /usr/lib/ruby/1.9.1/arm-linux-eabihf/etc.so
+76995000-7699a000 r-xp 00000000 b3:06 274916     /usr/lib/ruby/1.9.1/arm-linux-eabihf/pathname.so
+7699a000-769a1000 ---p 00005000 b3:06 274916     /usr/lib/ruby/1.9.1/arm-linux-eabihf/pathname.so
+769a1000-769a2000 r--p 00004000 b3:06 274916     /usr/lib/ruby/1.9.1/arm-linux-eabihf/pathname.so
+769a2000-769a3000 rw-p 00005000 b3:06 274916     /usr/lib/ruby/1.9.1/arm-linux-eabihf/pathname.so
+769a3000-769a5000 r-xp 00000000 b3:06 8733       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/trans/transdb.so
+769a5000-769ac000 ---p 00002000 b3:06 8733       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/trans/transdb.so
+769ac000-769ad000 r--p 00001000 b3:06 8733       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/trans/transdb.so
+769ad000-769ae000 rw-p 00002000 b3:06 8733       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/trans/transdb.so
+769ae000-769b0000 r-xp 00000000 b3:06 8703       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/encdb.so
+769b0000-769b7000 ---p 00002000 b3:06 8703       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/encdb.so
+769b7000-769b8000 r--p 00001000 b3:06 8703       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/encdb.so
+769b8000-769b9000 rw-p 00002000 b3:06 8703       /usr/lib/ruby/1.9.1/arm-linux-eabihf/enc/encdb.so
+769b9000-76a3a000 rw-p 00000000 00:00 0 
+76a3a000-76bb1000 r--p 00000000 b3:06 273422     /usr/lib/locale/locale-archive
+76bb1000-76bd1000 r-xp 00000000 b3:06 261413     /lib/arm-linux-gnueabihf/libgcc_s.so.1
+76bd1000-76bd8000 ---p 00020000 b3:06 261413     /lib/arm-linux-gnueabihf/libgcc_s.so.1
+76bd8000-76bd9000 rw-p 0001f000 b3:06 261413     /lib/arm-linux-gnueabihf/libgcc_s.so.1
+76bd9000-76cfc000 r-xp 00000000 b3:06 261420     /lib/arm-linux-gnueabihf/libc-2.13.so
+76cfc000-76d03000 ---p 00123000 b3:06 261420     /lib/arm-linux-gnueabihf/libc-2.13.so
+76d03000-76d05000 r--p 00122000 b3:06 261420     /lib/arm-linux-gnueabihf/libc-2.13.so
+76d05000-76d06000 rw-p 00124000 b3:06 261420     /lib/arm-linux-gnueabihf/libc-2.13.so
+76d06000-76d09000 rw-p 00000000 00:00 0 
+76d09000-76d71000 r-xp 00000000 b3:06 261462     /lib/arm-linux-gnueabihf/libm-2.13.so
+76d71000-76d78000 ---p 00068000 b3:06 261462     /lib/arm-linux-gnueabihf/libm-2.13.so
+76d78000-76d79000 r--p 00067000 b3:06 261462     /lib/arm-linux-gnueabihf/libm-2.13.so
+76d79000-76d7a000 rw-p 00068000 b3:06 261462     /lib/arm-linux-gnueabihf/libm-2.13.so
+76d7a000-76d81000 r-xp 00000000 b3:06 261519     /lib/arm-linux-gnueabihf/libcrypt-2.13.so
+76d81000-76d88000 ---p 00007000 b3:06 261519     /lib/arm-linux-gnueabihf/libcrypt-2.13.so
+76d88000-76d89000 r--p 00006000 b3:06 261519     /lib/arm-linux-gnueabihf/libcrypt-2.13.so
+76d89000-76d8a000 rw-p 00007000 b3:06 261519     /lib/arm-linux-gnueabihf/libcrypt-2.13.so
+76d8a000-76db1000 rw-p 00000000 00:00 0 
+76db1000-76db3000 r-xp 00000000 b3:06 261453     /lib/arm-linux-gnueabihf/libdl-2.13.so
+76db3000-76dba000 ---p 00002000 b3:06 261453     /lib/arm-linux-gnueabihf/libdl-2.13.so
+76dba000-76dbb000 r--p 00001000 b3:06 261453     /lib/arm-linux-gnueabihf/libdl-2.13.so
+76dbb000-76dbc000 rw-p 00002000 b3:06 261453     /lib/arm-linux-gnueabihf/libdl-2.13.so
+76dbc000-76dc2000 r-xp 00000000 b3:06 261407     /lib/arm-linux-gnueabihf/librt-2.13.so
+76dc2000-76dc9000 ---p 00006000 b3:06 261407     /lib/arm-linux-gnueabihf/librt-2.13.so
+76dc9000-76dca000 r--p 00005000 b3:06 261407     /lib/arm-linux-gnueabihf/librt-2.13.so
+76dca000-76dcb000 rw-p 00006000 b3:06 261407     /lib/arm-linux-gnueabihf/librt-2.13.so
+76dcb000-76ddf000 r-xp 00000000 b3:06 261447     /lib/arm-linux-gnueabihf/libpthread-2.13.so
+76ddf000-76de6000 ---p 00014000 b3:06 261447     /lib/arm-linux-gnueabihf/libpthread-2.13.so
+76de6000-76de7000 r--p 00013000 b3:06 261447     /lib/arm-linux-gnueabihf/libpthread-2.13.so
+76de7000-76de8000 rw-p 00014000 b3:06 261447     /lib/arm-linux-gnueabihf/libpthread-2.13.so
+76de8000-76dea000 rw-p 00000000 00:00 0 
+76dea000-76f93000 r-xp 00000000 b3:06 275279     /usr/lib/libruby-1.9.1.so.1.9.1
+76f93000-76f9a000 ---p 001a9000 b3:06 275279     /usr/lib/libruby-1.9.1.so.1.9.1
+76f9a000-76f9f000 rw-p 001a8000 b3:06 275279     /usr/lib/libruby-1.9.1.so.1.9.1
+76f9f000-76fae000 rw-p 00000000 00:00 0 
+76fb2000-76fb9000 r--s 00000000 b3:06 268995     /usr/lib/arm-linux-gnueabihf/gconv/gconv-modules.cache
+76fb9000-76fba000 ---p 00000000 00:00 0 
+76fba000-76fbd000 rw-p 00000000 00:00 0          [stack:28973]
+76fbd000-76fbf000 r-xp 00000000 b3:06 268471     /usr/lib/arm-linux-gnueabihf/libcofi_rpi.so
+76fbf000-76fc6000 ---p 00002000 b3:06 268471     /usr/lib/arm-linux-gnueabihf/libcofi_rpi.so
+76fc6000-76fc7000 rw-p 00001000 b3:06 268471     /usr/lib/arm-linux-gnueabihf/libcofi_rpi.so
+76fc7000-76fe4000 r-xp 00000000 b3:06 261586     /lib/arm-linux-gnueabihf/ld-2.13.so
+76fe5000-76fe7000 rw-p 00000000 00:00 0 
+76fe7000-76fec000 rw-p 00000000 00:00 0 
+76fec000-76fed000 r--p 0001d000 b3:06 261586     /lib/arm-linux-gnueabihf/ld-2.13.so
+76fed000-76fee000 rw-p 0001e000 b3:06 261586     /lib/arm-linux-gnueabihf/ld-2.13.so
+7ebf1000-7ec12000 rw-p 00000000 00:00 0 
+7ef87000-7ef88000 r-xp 00000000 00:00 0          [sigpage]
+7ef88000-7ef89000 r--p 00000000 00:00 0          [vvar]
+7ef89000-7ef8a000 r-xp 00000000 00:00 0          [vdso]
+ffff0000-ffff1000 r-xp 00000000 00:00 0          [vectors]
+
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+
