@@ -11,7 +11,7 @@ gem install mysql2
 
 
 Pre-requisites:
-sudo apt-get install chromium x11-xserver-utils unclutter mysql
+sudo apt-get install chromium unclutter
 
 Setup RTC
 http://thepihut.com/blogs/raspberry-pi-tutorials/17209332-adding-a-real-time-clock-to-your-raspberry-pi
