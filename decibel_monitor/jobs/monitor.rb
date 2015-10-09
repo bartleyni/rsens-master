@@ -1,6 +1,6 @@
 require 'mysql2'
 
-SCHEDULER.every '0.4s', :first_in => 0 do |job|
+SCHEDULER.every '0.5s', :first_in => 0 do |job|
 
   # Myql connection
   db = Mysql2::Client.new(:host => "RaspberryNAS", :username => "root", :password => "raspberry", :port => 3306, :database => "decibel_monitor" )

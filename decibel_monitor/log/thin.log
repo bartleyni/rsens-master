@@ -1226,3 +1226,516 @@ You may have encountered a bug in the Ruby interpreter or extension libraries.
 Bug reports are welcome.
 For details: http://www.ruby-lang.org/bugreport.html
 
+Writing PID to tmp/pids/thin.pid
+================================================================================
+scheduler caught exception:Thin web server (v1.6.4 codename Gob Bluth)
+
+Maximum connections set to 1024
+uninitialized constant Mysql2Listening on 0.0.0.0:3030, CTRL+C to stop
+
+/home/pi/decibel_monitor/jobs/adverage.rb:4:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+192.168.0.140 - - [30/Sep/2015 22:13:22] "GET /monitor HTTP/1.1" 200 2186 0.0288
+192.168.0.140 - - [30/Sep/2015 22:13:22] "GET /events HTTP/1.1" 200 - 1155.2460
+192.168.0.140 - - [30/Sep/2015 22:13:23] "GET /views/meter.html HTTP/1.1" 200 336 0.0053
+192.168.0.140 - - [30/Sep/2015 22:16:46] "GET /monitor HTTP/1.1" 200 2210 0.0191
+192.168.0.140 - - [30/Sep/2015 22:16:46] "GET /events HTTP/1.1" 200 - 202.6654
+192.168.0.140 - - [30/Sep/2015 22:16:47] "GET /views/meter.html HTTP/1.1" 200 336 0.0047
+192.168.0.146 - - [30/Sep/2015 22:35:01] "GET / HTTP/1.1" 302 - 0.0042
+192.168.0.146 - - [30/Sep/2015 22:35:01] "GET /monitor HTTP/1.1" 200 2210 0.0240
+192.168.0.146 - - [30/Sep/2015 22:35:22] "GET /views/meter.html HTTP/1.1" 200 336 0.0053
+192.168.0.146 - - [30/Sep/2015 22:38:14] "GET /events HTTP/1.1" 200 - 171.5807
+192.168.0.140 - - [01/Oct/2015 02:04:47] "GET /events HTTP/1.1" 200 - 13679.6406
+192.168.0.146 - - [01/Oct/2015 05:03:14] "GET /events HTTP/1.1" 200 - 6.8843
+192.168.0.146 - - [01/Oct/2015 05:23:13] "GET /events HTTP/1.1" 200 - 182.9304
+192.168.0.146 - - [01/Oct/2015 05:44:10] "GET /events HTTP/1.1" 200 - 10.1281
+192.168.0.86 - - [01/Oct/2015 06:22:01] "GET / HTTP/1.1" 302 - 0.0029
+192.168.0.86 - - [01/Oct/2015 06:22:01] "GET /monitor HTTP/1.1" 200 2210 0.0226
+192.168.0.86 - - [01/Oct/2015 06:22:05] "GET /views/meter.html HTTP/1.1" 200 336 0.0067
+192.168.0.86 - - [01/Oct/2015 06:24:17] "GET /events HTTP/1.1" 200 - 131.4254
+192.168.0.86 - - [01/Oct/2015 06:33:52] "GET /monitor HTTP/1.1" 200 2210 0.0228
+192.168.0.86 - - [01/Oct/2015 06:33:54] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+192.168.0.86 - - [01/Oct/2015 06:36:01] "GET /events HTTP/1.1" 200 - 127.5280
+192.168.0.86 - - [01/Oct/2015 06:55:08] "GET /monitor HTTP/1.1" 200 2210 0.0198
+192.168.0.86 - - [01/Oct/2015 06:55:09] "GET /views/meter.html HTTP/1.1" 200 336 0.0054
+192.168.0.86 - - [01/Oct/2015 06:57:09] "GET /events HTTP/1.1" 200 - 119.9260
+192.168.0.86 - - [01/Oct/2015 07:07:13] "GET /monitor HTTP/1.1" 200 2210 0.0279
+192.168.0.86 - - [01/Oct/2015 07:07:14] "GET /views/meter.html HTTP/1.1" 200 336 0.0067
+192.168.0.86 - - [01/Oct/2015 07:09:23] "GET /events HTTP/1.1" 200 - 128.9146
+192.168.0.86 - - [01/Oct/2015 08:12:10] "GET /monitor HTTP/1.1" 200 2210 0.0319
+192.168.0.86 - - [01/Oct/2015 08:12:11] "GET /views/meter.html HTTP/1.1" 200 336 0.0071
+192.168.0.86 - - [01/Oct/2015 08:13:50] "GET /events HTTP/1.1" 200 - 98.4838
+192.168.0.86 - - [01/Oct/2015 10:16:30] "GET /monitor HTTP/1.1" 200 2210 0.0275
+192.168.0.86 - - [01/Oct/2015 10:16:31] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+192.168.0.86 - - [01/Oct/2015 10:18:30] "GET /events HTTP/1.1" 200 - 118.9900
+192.168.0.86 - - [01/Oct/2015 10:24:12] "GET /monitor HTTP/1.1" 200 2210 0.0192
+192.168.0.86 - - [01/Oct/2015 10:24:13] "GET /views/meter.html HTTP/1.1" 200 336 0.0047
+192.168.0.86 - - [01/Oct/2015 10:26:12] "GET /events HTTP/1.1" 200 - 119.2011
+192.168.0.86 - - [01/Oct/2015 11:44:25] "GET /monitor HTTP/1.1" 200 2210 0.0339
+192.168.0.86 - - [01/Oct/2015 11:44:26] "GET /views/meter.html HTTP/1.1" 200 336 0.0064
+192.168.0.86 - - [01/Oct/2015 11:45:56] "GET /events HTTP/1.1" 200 - 90.1305
+192.168.0.86 - - [01/Oct/2015 12:29:35] "GET /monitor HTTP/1.1" 200 2210 0.0190
+192.168.0.86 - - [01/Oct/2015 12:29:36] "GET /views/meter.html HTTP/1.1" 200 336 0.0053
+192.168.0.86 - - [01/Oct/2015 12:31:54] "GET /events HTTP/1.1" 200 - 138.5570
+192.168.0.86 - - [01/Oct/2015 12:41:04] "GET /monitor HTTP/1.1" 200 2210 0.0210
+192.168.0.86 - - [01/Oct/2015 12:41:04] "GET /views/meter.html HTTP/1.1" 200 336 0.0063
+192.168.0.86 - - [01/Oct/2015 12:42:32] "GET /events HTTP/1.1" 200 - 87.1976
+192.168.0.86 - - [01/Oct/2015 12:42:37] "GET /views/meter.html HTTP/1.1" 200 336 0.0050
+192.168.0.86 - - [01/Oct/2015 12:45:34] "GET /events HTTP/1.1" 200 - 176.4177
+192.168.0.86 - - [01/Oct/2015 13:05:33] "GET /monitor HTTP/1.1" 200 2210 0.0200
+192.168.0.86 - - [01/Oct/2015 13:05:34] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+192.168.0.86 - - [01/Oct/2015 13:07:45] "GET /events HTTP/1.1" 200 - 131.6953
+192.168.0.86 - - [01/Oct/2015 14:19:38] "GET /monitor HTTP/1.1" 200 2210 0.0698
+192.168.0.86 - - [01/Oct/2015 14:19:39] "GET /views/meter.html HTTP/1.1" 200 336 0.0071
+192.168.0.86 - - [01/Oct/2015 14:20:53] "GET /events HTTP/1.1" 200 - 73.9424
+192.168.0.140 - - [01/Oct/2015 16:54:22] "GET /monitor HTTP/1.1" 200 2210 0.0280
+192.168.0.140 - - [01/Oct/2015 16:54:25] "GET /views/meter.html HTTP/1.1" 200 336 0.0065
+192.168.0.140 - - [01/Oct/2015 16:55:55] "GET /events HTTP/1.1" 200 - 89.9978
+192.168.0.140 - - [01/Oct/2015 16:56:58] "GET /events HTTP/1.1" 200 - 59.9996
+192.168.0.140 - - [01/Oct/2015 17:06:01] "GET /events HTTP/1.1" 200 - 540.0030
+192.168.0.140 - - [01/Oct/2015 17:07:04] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.140 - - [01/Oct/2015 17:08:37] "GET /events HTTP/1.1" 200 - 90.0010
+192.168.0.140 - - [01/Oct/2015 17:09:41] "GET /events HTTP/1.1" 200 - 59.9997
+192.168.0.140 - - [01/Oct/2015 17:10:44] "GET /events HTTP/1.1" 200 - 60.0010
+192.168.0.140 - - [01/Oct/2015 17:11:47] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 17:12:50] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 17:13:53] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 17:14:56] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 17:15:59] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 17:17:02] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 17:18:05] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 17:19:38] "GET /events HTTP/1.1" 200 - 90.0019
+192.168.0.140 - - [01/Oct/2015 17:20:41] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.140 - - [01/Oct/2015 17:21:44] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.140 - - [01/Oct/2015 17:22:47] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.140 - - [01/Oct/2015 17:23:50] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.140 - - [01/Oct/2015 17:24:53] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.140 - - [01/Oct/2015 17:25:56] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 17:26:59] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 17:28:03] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 17:29:06] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.140 - - [01/Oct/2015 17:30:39] "GET /events HTTP/1.1" 200 - 90.0004
+192.168.0.140 - - [01/Oct/2015 17:31:42] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.140 - - [01/Oct/2015 17:32:45] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 17:33:48] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.140 - - [01/Oct/2015 17:34:51] "GET /events HTTP/1.1" 200 - 59.9978
+192.168.0.140 - - [01/Oct/2015 17:35:54] "GET /events HTTP/1.1" 200 - 59.9955
+192.168.0.140 - - [01/Oct/2015 17:36:57] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.140 - - [01/Oct/2015 17:38:00] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.140 - - [01/Oct/2015 17:39:03] "GET /events HTTP/1.1" 200 - 59.9993
+192.168.0.140 - - [01/Oct/2015 17:40:36] "GET /events HTTP/1.1" 200 - 89.9996
+192.168.0.140 - - [01/Oct/2015 17:41:39] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.140 - - [01/Oct/2015 17:42:42] "GET /events HTTP/1.1" 200 - 60.0015
+192.168.0.140 - - [01/Oct/2015 17:43:45] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.140 - - [01/Oct/2015 17:44:48] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 17:45:51] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 17:46:54] "GET /events HTTP/1.1" 200 - 60.0016
+192.168.0.140 - - [01/Oct/2015 17:47:57] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.140 - - [01/Oct/2015 17:49:00] "GET /events HTTP/1.1" 200 - 59.9989
+192.168.0.140 - - [01/Oct/2015 17:50:03] "GET /events HTTP/1.1" 200 - 60.0010
+192.168.0.140 - - [01/Oct/2015 17:51:36] "GET /events HTTP/1.1" 200 - 90.0010
+192.168.0.140 - - [01/Oct/2015 17:52:39] "GET /events HTTP/1.1" 200 - 59.9988
+192.168.0.140 - - [01/Oct/2015 17:53:42] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.140 - - [01/Oct/2015 17:54:45] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.140 - - [01/Oct/2015 17:55:48] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 17:56:51] "GET /events HTTP/1.1" 200 - 59.9979
+192.168.0.140 - - [01/Oct/2015 17:56:56] "GET / HTTP/1.1" 302 - 0.0037
+192.168.0.140 - - [01/Oct/2015 17:56:56] "GET /monitor HTTP/1.1" 200 2210 0.0269
+192.168.0.140 - - [01/Oct/2015 17:56:57] "GET /views/meter.html HTTP/1.1" 200 336 0.0064
+192.168.0.140 - - [01/Oct/2015 17:57:55] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.140 - - [01/Oct/2015 17:57:56] "GET /events HTTP/1.1" 200 - 58.6047
+192.168.0.140 - - [01/Oct/2015 17:58:58] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.140 - - [01/Oct/2015 17:58:59] "GET /events HTTP/1.1" 200 - 59.9997
+192.168.0.140 - - [01/Oct/2015 18:00:01] "GET /events HTTP/1.1" 200 - 59.9992
+192.168.0.140 - - [01/Oct/2015 18:00:02] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.140 - - [01/Oct/2015 18:01:04] "GET /events HTTP/1.1" 200 - 59.9999
+192.168.0.140 - - [01/Oct/2015 18:01:05] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.140 - - [01/Oct/2015 18:02:37] "GET /events HTTP/1.1" 200 - 89.9995
+192.168.0.140 - - [01/Oct/2015 18:02:38] "GET /events HTTP/1.1" 200 - 90.0011
+192.168.0.140 - - [01/Oct/2015 18:03:40] "GET /events HTTP/1.1" 200 - 59.9974
+192.168.0.140 - - [01/Oct/2015 18:03:41] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 18:04:43] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 18:04:44] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.140 - - [01/Oct/2015 18:05:46] "GET /events HTTP/1.1" 200 - 59.9996
+192.168.0.140 - - [01/Oct/2015 18:05:47] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.140 - - [01/Oct/2015 18:06:49] "GET /events HTTP/1.1" 200 - 60.0014
+192.168.0.140 - - [01/Oct/2015 18:06:50] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.140 - - [01/Oct/2015 18:07:52] "GET /events HTTP/1.1" 200 - 60.0015
+192.168.0.140 - - [01/Oct/2015 18:07:53] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:08:55] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.140 - - [01/Oct/2015 18:08:56] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.140 - - [01/Oct/2015 18:09:12] "GET /monitor HTTP/1.1" 200 2210 0.0271
+192.168.0.140 - - [01/Oct/2015 18:09:13] "GET /events HTTP/1.1" 200 - 14.6668
+192.168.0.140 - - [01/Oct/2015 18:09:13] "GET /views/meter.html HTTP/1.1" 200 336 0.0047
+192.168.0.140 - - [01/Oct/2015 18:09:59] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:10:42] "GET /events HTTP/1.1" 200 - 89.5799
+192.168.0.140 - - [01/Oct/2015 18:11:02] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:11:45] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:12:05] "GET /events HTTP/1.1" 200 - 59.9997
+192.168.0.140 - - [01/Oct/2015 18:12:48] "GET /events HTTP/1.1" 200 - 59.9999
+192.168.0.140 - - [01/Oct/2015 18:13:00] "GET /monitor HTTP/1.1" 200 2210 0.0186
+192.168.0.140 - - [01/Oct/2015 18:13:00] "GET /events HTTP/1.1" 200 - 8.1232
+192.168.0.140 - - [01/Oct/2015 18:13:00] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+192.168.0.140 - - [01/Oct/2015 18:13:38] "GET /events HTTP/1.1" 200 - 89.9998
+192.168.0.140 - - [01/Oct/2015 18:14:00] "GET /events HTTP/1.1" 200 - 59.6122
+192.168.0.140 - - [01/Oct/2015 18:14:41] "GET /events HTTP/1.1" 200 - 59.9986
+192.168.0.140 - - [01/Oct/2015 18:15:03] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:15:44] "GET /events HTTP/1.1" 200 - 59.9999
+192.168.0.140 - - [01/Oct/2015 18:16:06] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.140 - - [01/Oct/2015 18:16:47] "GET /events HTTP/1.1" 200 - 60.0019
+192.168.0.140 - - [01/Oct/2015 18:17:39] "GET /events HTTP/1.1" 200 - 90.0001
+192.168.0.140 - - [01/Oct/2015 18:17:51] "GET /events HTTP/1.1" 200 - 59.9978
+192.168.0.140 - - [01/Oct/2015 18:18:42] "GET /events HTTP/1.1" 200 - 59.9995
+192.168.0.140 - - [01/Oct/2015 18:18:54] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 18:19:45] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.140 - - [01/Oct/2015 18:19:57] "GET /events HTTP/1.1" 200 - 59.9978
+192.168.0.140 - - [01/Oct/2015 18:20:48] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.140 - - [01/Oct/2015 18:21:00] "GET /events HTTP/1.1" 200 - 59.9997
+192.168.0.140 - - [01/Oct/2015 18:21:51] "GET /events HTTP/1.1" 200 - 59.9971
+192.168.0.140 - - [01/Oct/2015 18:22:03] "GET /events HTTP/1.1" 200 - 60.0011
+192.168.0.140 - - [01/Oct/2015 18:22:54] "GET /events HTTP/1.1" 200 - 59.9971
+192.168.0.140 - - [01/Oct/2015 18:23:06] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.140 - - [01/Oct/2015 18:23:57] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 18:24:39] "GET /events HTTP/1.1" 200 - 90.0013
+192.168.0.140 - - [01/Oct/2015 18:25:00] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.140 - - [01/Oct/2015 18:25:42] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.140 - - [01/Oct/2015 18:26:03] "GET /events HTTP/1.1" 200 - 60.0012
+192.168.0.140 - - [01/Oct/2015 18:26:45] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.140 - - [01/Oct/2015 18:27:06] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.140 - - [01/Oct/2015 18:32:39] "GET /events HTTP/1.1" 200 - 329.9960
+192.168.0.140 - - [01/Oct/2015 19:13:18] "GET /events HTTP/1.1" 200 - 2789.4960
+192.168.0.132 - - [01/Oct/2015 19:26:38] "GET / HTTP/1.1" 302 - 0.0033
+192.168.0.132 - - [01/Oct/2015 19:26:38] "GET /monitor HTTP/1.1" 200 2210 0.0217
+192.168.0.132 - - [01/Oct/2015 19:26:40] "GET /views/meter.html HTTP/1.1" 200 336 0.0050
+192.168.0.132 - - [01/Oct/2015 19:28:17] "GET /events HTTP/1.1" 200 - 97.7536
+192.168.0.132 - - [01/Oct/2015 19:35:34] "GET /monitor HTTP/1.1" 200 2210 0.0234
+192.168.0.132 - - [01/Oct/2015 19:35:36] "GET /views/meter.html HTTP/1.1" 200 336 0.0064
+192.168.0.132 - - [01/Oct/2015 19:35:36] "GET /favicon.ico HTTP/1.1" 200 5430 0.0065
+192.168.0.132 - - [01/Oct/2015 19:51:16] "GET /events HTTP/1.1" 200 - 941.2989
+192.168.0.132 - - [01/Oct/2015 19:52:47] "GET / HTTP/1.1" 302 - 0.0039
+192.168.0.132 - - [01/Oct/2015 19:52:47] "GET /monitor HTTP/1.1" 200 2210 0.0224
+192.168.0.132 - - [01/Oct/2015 19:52:50] "GET /views/meter.html HTTP/1.1" 200 336 0.0050
+192.168.0.140 - - [01/Oct/2015 20:33:24] "GET /events HTTP/1.1" 200 - 7242.4307
+192.168.0.132 - - [01/Oct/2015 20:41:17] "GET /events HTTP/1.1" 200 - 2907.1810
+192.168.0.140 - - [01/Oct/2015 21:08:30] "GET / HTTP/1.1" 302 - 0.0056
+192.168.0.140 - - [01/Oct/2015 21:08:30] "GET /monitor HTTP/1.1" 200 2210 0.0217
+192.168.0.140 - - [01/Oct/2015 21:08:32] "GET /views/meter.html HTTP/1.1" 200 336 0.0051
+192.168.0.133 - - [01/Oct/2015 21:39:51] "GET / HTTP/1.1" 302 - 0.0034
+192.168.0.133 - - [01/Oct/2015 21:39:51] "GET /monitor HTTP/1.1" 200 2210 0.0188
+192.168.0.133 - - [01/Oct/2015 21:39:53] "GET /views/meter.html HTTP/1.1" 200 336 0.0050
+192.168.0.140 - - [01/Oct/2015 22:01:37] "GET /events HTTP/1.1" 200 - 3185.4019
+192.168.0.133 - - [01/Oct/2015 22:11:51] "GET /events HTTP/1.1" 200 - 1918.4099
+192.168.0.133 - - [01/Oct/2015 22:13:03] "GET /events HTTP/1.1" 200 - 59.7495
+192.168.0.133 - - [01/Oct/2015 22:14:52] "GET /events HTTP/1.1" 200 - 59.3811
+192.168.0.133 - - [01/Oct/2015 22:18:01] "GET /events HTTP/1.1" 200 - 89.1608
+192.168.0.146 - - [01/Oct/2015 22:21:23] "GET / HTTP/1.1" 302 - 0.0037
+192.168.0.146 - - [01/Oct/2015 22:21:23] "GET /monitor HTTP/1.1" 200 2210 0.0266
+192.168.0.146 - - [01/Oct/2015 22:21:24] "GET /views/meter.html HTTP/1.1" 200 336 0.0065
+192.168.0.133 - - [01/Oct/2015 22:21:39] "GET /events HTTP/1.1" 200 - 88.6248
+192.168.0.146 - - [01/Oct/2015 22:21:46] "GET /events HTTP/1.1" 200 - 22.8409
+192.168.0.146 - - [01/Oct/2015 22:21:46] "GET /monitor HTTP/1.1" 200 2210 0.0315
+192.168.0.146 - - [01/Oct/2015 22:21:47] "GET /views/meter.html HTTP/1.1" 200 336 0.0069
+192.168.0.146 - - [01/Oct/2015 22:21:57] "GET /events HTTP/1.1" 200 - 9.7536
+192.168.0.133 - - [01/Oct/2015 22:25:42] "GET /events HTTP/1.1" 200 - 58.9754
+192.168.0.133 - - [01/Oct/2015 22:29:50] "GET /events HTTP/1.1" 200 - 87.6739
+192.168.0.133 - - [01/Oct/2015 22:33:37] "GET /events HTTP/1.1" 200 - 58.5076
+192.168.0.133 - - [01/Oct/2015 22:38:54] "GET /events HTTP/1.1" 200 - 88.2388
+192.168.0.133 - - [01/Oct/2015 22:43:53] "GET /events HTTP/1.1" 200 - 56.5635
+192.168.0.133 - - [01/Oct/2015 22:49:43] "GET /events HTTP/1.1" 200 - 85.8154
+192.168.0.133 - - [01/Oct/2015 22:55:41] "GET /events HTTP/1.1" 200 - 85.9568
+192.168.0.133 - - [01/Oct/2015 23:00:44] "GET /events HTTP/1.1" 200 - 86.6347
+192.168.0.133 - - [01/Oct/2015 23:06:05] "GET /events HTTP/1.1" 200 - 57.5053
+192.168.0.133 - - [01/Oct/2015 23:10:55] "GET /events HTTP/1.1" 200 - 55.1119
+192.168.0.133 - - [01/Oct/2015 23:16:56] "GET /events HTTP/1.1" 200 - 56.5850
+192.168.0.133 - - [01/Oct/2015 23:23:58] "GET /events HTTP/1.1" 200 - 85.9571
+192.168.0.133 - - [01/Oct/2015 23:31:03] "GET /events HTTP/1.1" 200 - 49.6791
+192.168.0.133 - - [01/Oct/2015 23:36:37] "GET /events HTTP/1.1" 200 - 55.8897
+192.168.0.133 - - [01/Oct/2015 23:44:44] "GET /events HTTP/1.1" 200 - 83.5890
+192.168.0.133 - - [01/Oct/2015 23:53:00] "GET /events HTTP/1.1" 200 - 84.6089
+192.168.0.133 - - [02/Oct/2015 00:01:41] "GET /events HTTP/1.1" 200 - 82.6582
+192.168.0.133 - - [02/Oct/2015 00:11:02] "GET /events HTTP/1.1" 200 - 53.6581
+192.168.0.133 - - [02/Oct/2015 00:18:04] "GET /events HTTP/1.1" 200 - 78.5864
+192.168.0.133 - - [02/Oct/2015 00:26:53] "GET /events HTTP/1.1" 200 - 84.1668
+192.168.0.133 - - [02/Oct/2015 00:34:49] "GET /events HTTP/1.1" 200 - 82.2802
+192.168.0.133 - - [02/Oct/2015 00:41:51] "GET /events HTTP/1.1" 200 - 82.0435
+192.168.0.133 - - [02/Oct/2015 00:50:51] "GET /events HTTP/1.1" 200 - 52.8925
+192.168.0.133 - - [02/Oct/2015 00:58:40] "GET /events HTTP/1.1" 200 - 81.7511
+192.168.0.133 - - [02/Oct/2015 01:07:00] "GET /events HTTP/1.1" 200 - 52.7398
+192.168.0.133 - - [02/Oct/2015 01:13:56] "GET /events HTTP/1.1" 200 - 81.2143
+192.168.0.133 - - [02/Oct/2015 01:22:04] "GET /events HTTP/1.1" 200 - 53.0817
+192.168.0.133 - - [02/Oct/2015 01:26:48] "GET /events HTTP/1.1" 200 - 52.0045
+192.168.0.133 - - [02/Oct/2015 01:33:46] "GET /events HTTP/1.1" 200 - 81.9722
+192.168.0.133 - - [02/Oct/2015 01:40:02] "GET /events HTTP/1.1" 200 - 46.0426
+192.168.0.133 - - [02/Oct/2015 01:44:53] "GET /events HTTP/1.1" 200 - 84.0793
+192.168.0.133 - - [02/Oct/2015 01:49:53] "GET /events HTTP/1.1" 200 - 52.7587
+192.168.0.133 - - [02/Oct/2015 01:56:04] "GET /events HTTP/1.1" 200 - 80.7788
+192.168.0.133 - - [02/Oct/2015 02:03:02] "GET /events HTTP/1.1" 200 - 50.2350
+192.168.0.133 - - [02/Oct/2015 02:07:54] "GET /events HTTP/1.1" 200 - 80.8839
+192.168.0.133 - - [02/Oct/2015 02:13:56] "GET /events HTTP/1.1" 200 - 83.5989
+192.168.0.133 - - [02/Oct/2015 02:19:43] "GET /events HTTP/1.1" 200 - 51.8783
+192.168.0.133 - - [02/Oct/2015 02:25:50] "GET /events HTTP/1.1" 200 - 83.0400
+192.168.0.133 - - [02/Oct/2015 02:31:57] "GET /events HTTP/1.1" 200 - 85.0422
+192.168.0.133 - - [02/Oct/2015 02:37:00] "GET /events HTTP/1.1" 200 - 84.8687
+192.168.0.133 - - [02/Oct/2015 02:42:36] "GET /events HTTP/1.1" 200 - 78.6128
+192.168.0.133 - - [02/Oct/2015 02:48:37] "GET /events HTTP/1.1" 200 - 110.7815
+192.168.0.133 - - [02/Oct/2015 02:54:53] "GET /events HTTP/1.1" 200 - 53.5490
+192.168.0.133 - - [02/Oct/2015 03:00:40] "GET /events HTTP/1.1" 200 - 83.4870
+192.168.0.133 - - [02/Oct/2015 03:06:01] "GET /events HTTP/1.1" 200 - 54.4302
+192.168.0.133 - - [02/Oct/2015 03:09:37] "GET /events HTTP/1.1" 200 - 54.1795
+192.168.0.133 - - [02/Oct/2015 03:15:39] "GET /events HTTP/1.1" 200 - 77.6923
+192.168.0.133 - - [02/Oct/2015 03:21:57] "GET /events HTTP/1.1" 200 - 54.1481
+192.168.0.133 - - [02/Oct/2015 03:27:43] "GET /events HTTP/1.1" 200 - 82.9932
+192.168.0.133 - - [02/Oct/2015 03:32:50] "GET /events HTTP/1.1" 200 - 84.1856
+192.168.0.133 - - [02/Oct/2015 03:38:02] "GET /events HTTP/1.1" 200 - 82.1546
+192.168.0.133 - - [02/Oct/2015 03:43:37] "GET /events HTTP/1.1" 200 - 80.7312
+192.168.0.133 - - [02/Oct/2015 03:49:39] "GET /events HTTP/1.1" 200 - 81.6720
+192.168.0.133 - - [02/Oct/2015 03:54:59] "GET /events HTTP/1.1" 200 - 52.0740
+192.168.0.133 - - [02/Oct/2015 03:59:03] "GET /events HTTP/1.1" 200 - 53.7312
+192.168.0.133 - - [02/Oct/2015 04:03:39] "GET /events HTTP/1.1" 200 - 83.7924
+192.168.0.133 - - [02/Oct/2015 04:09:40] "GET /events HTTP/1.1" 200 - 81.1567
+192.168.0.133 - - [02/Oct/2015 04:14:50] "GET /events HTTP/1.1" 200 - 51.9478
+192.168.0.133 - - [02/Oct/2015 04:21:44] "GET /events HTTP/1.1" 200 - 82.5258
+192.168.0.133 - - [02/Oct/2015 04:27:54] "GET /events HTTP/1.1" 200 - 80.8424
+192.168.0.133 - - [02/Oct/2015 04:33:56] "GET /events HTTP/1.1" 200 - 80.9857
+192.168.0.133 - - [02/Oct/2015 04:40:36] "GET /events HTTP/1.1" 200 - 83.2263
+192.168.0.133 - - [02/Oct/2015 04:46:48] "GET /events HTTP/1.1" 200 - 82.2068
+192.168.0.133 - - [02/Oct/2015 04:52:59] "GET /events HTTP/1.1" 200 - 50.4255
+192.168.0.133 - - [02/Oct/2015 04:57:39] "GET /events HTTP/1.1" 200 - 53.1634
+192.168.0.133 - - [02/Oct/2015 05:03:42] "GET /events HTTP/1.1" 200 - 49.1878
+192.168.0.133 - - [02/Oct/2015 05:10:50] "GET /events HTTP/1.1" 200 - 79.4945
+192.168.0.133 - - [02/Oct/2015 05:16:38] "GET /events HTTP/1.1" 200 - 52.7455
+192.168.0.133 - - [02/Oct/2015 05:24:46] "GET /events HTTP/1.1" 200 - 78.5217
+192.168.0.133 - - [02/Oct/2015 05:31:05] "GET /events HTTP/1.1" 200 - 47.7220
+192.168.0.133 - - [02/Oct/2015 05:36:52] "GET /events HTTP/1.1" 200 - 80.3219
+192.168.0.133 - - [02/Oct/2015 05:43:41] "GET /events HTTP/1.1" 200 - 80.9249
+192.168.0.133 - - [02/Oct/2015 05:49:55] "GET /events HTTP/1.1" 200 - 47.1804
+192.168.0.133 - - [02/Oct/2015 05:54:06] "GET /events HTTP/1.1" 200 - 59.9998
+192.168.0.133 - - [02/Oct/2015 05:55:39] "GET /events HTTP/1.1" 200 - 89.9999
+192.168.0.133 - - [02/Oct/2015 05:56:42] "GET /events HTTP/1.1" 200 - 59.9999
+192.168.0.133 - - [02/Oct/2015 05:57:45] "GET /events HTTP/1.1" 200 - 59.9996
+192.168.0.133 - - [02/Oct/2015 05:58:48] "GET /events HTTP/1.1" 200 - 59.9990
+192.168.0.133 - - [02/Oct/2015 05:59:51] "GET /events HTTP/1.1" 200 - 60.0013
+192.168.0.133 - - [02/Oct/2015 06:00:54] "GET /events HTTP/1.1" 200 - 60.0010
+192.168.0.133 - - [02/Oct/2015 06:01:57] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.133 - - [02/Oct/2015 06:03:00] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.133 - - [02/Oct/2015 06:04:03] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 06:05:06] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.133 - - [02/Oct/2015 06:06:39] "GET /events HTTP/1.1" 200 - 90.0013
+192.168.0.133 - - [02/Oct/2015 06:07:42] "GET /events HTTP/1.1" 200 - 59.9999
+192.168.0.133 - - [02/Oct/2015 06:08:45] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:09:48] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:10:51] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 06:11:54] "GET /events HTTP/1.1" 200 - 59.9997
+192.168.0.133 - - [02/Oct/2015 06:12:57] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:14:00] "GET /events HTTP/1.1" 200 - 59.9993
+192.168.0.133 - - [02/Oct/2015 06:15:03] "GET /events HTTP/1.1" 200 - 59.9998
+192.168.0.133 - - [02/Oct/2015 06:16:36] "GET /events HTTP/1.1" 200 - 90.0000
+192.168.0.133 - - [02/Oct/2015 06:17:39] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.133 - - [02/Oct/2015 06:18:42] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.133 - - [02/Oct/2015 06:19:45] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.133 - - [02/Oct/2015 06:20:48] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.133 - - [02/Oct/2015 06:21:51] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.133 - - [02/Oct/2015 06:22:54] "GET /events HTTP/1.1" 200 - 60.0006
+192.168.0.133 - - [02/Oct/2015 06:23:57] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.133 - - [02/Oct/2015 06:25:00] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.133 - - [02/Oct/2015 06:26:03] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:27:36] "GET /events HTTP/1.1" 200 - 90.0006
+192.168.0.133 - - [02/Oct/2015 06:28:39] "GET /events HTTP/1.1" 200 - 59.9998
+192.168.0.133 - - [02/Oct/2015 06:29:42] "GET /events HTTP/1.1" 200 - 59.9996
+192.168.0.133 - - [02/Oct/2015 06:30:45] "GET /events HTTP/1.1" 200 - 59.9995
+192.168.0.133 - - [02/Oct/2015 06:31:48] "GET /events HTTP/1.1" 200 - 59.9994
+192.168.0.133 - - [02/Oct/2015 06:32:51] "GET /events HTTP/1.1" 200 - 59.9992
+192.168.0.133 - - [02/Oct/2015 06:33:54] "GET /events HTTP/1.1" 200 - 59.9991
+192.168.0.133 - - [02/Oct/2015 06:34:57] "GET /events HTTP/1.1" 200 - 59.9990
+192.168.0.133 - - [02/Oct/2015 06:36:00] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.133 - - [02/Oct/2015 06:37:04] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.133 - - [02/Oct/2015 06:38:37] "GET /events HTTP/1.1" 200 - 90.0011
+192.168.0.133 - - [02/Oct/2015 06:39:40] "GET /events HTTP/1.1" 200 - 60.0008
+192.168.0.133 - - [02/Oct/2015 06:40:43] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.133 - - [02/Oct/2015 06:41:46] "GET /events HTTP/1.1" 200 - 60.0005
+192.168.0.133 - - [02/Oct/2015 06:42:49] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 06:43:52] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:44:55] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.133 - - [02/Oct/2015 06:45:58] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 06:47:01] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 06:48:04] "GET /events HTTP/1.1" 200 - 59.9996
+192.168.0.133 - - [02/Oct/2015 06:49:37] "GET /events HTTP/1.1" 200 - 89.9998
+192.168.0.133 - - [02/Oct/2015 06:50:40] "GET /events HTTP/1.1" 200 - 59.9995
+192.168.0.133 - - [02/Oct/2015 06:51:43] "GET /events HTTP/1.1" 200 - 59.9992
+192.168.0.133 - - [02/Oct/2015 06:52:46] "GET /events HTTP/1.1" 200 - 59.9989
+192.168.0.133 - - [02/Oct/2015 06:53:49] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 06:54:52] "GET /events HTTP/1.1" 200 - 60.0011
+192.168.0.133 - - [02/Oct/2015 06:55:55] "GET /events HTTP/1.1" 200 - 60.0011
+192.168.0.133 - - [02/Oct/2015 06:56:58] "GET /events HTTP/1.1" 200 - 60.0007
+192.168.0.146 - - [02/Oct/2015 06:57:36] "GET /events HTTP/1.1" 200 - 1.9140
+192.168.0.133 - - [02/Oct/2015 06:58:01] "GET /events HTTP/1.1" 200 - 60.0005
+Writing PID to tmp/pids/thin.pid
+Thin web server (v1.6.4 codename Gob Bluth)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3030, CTRL+C to stop
+192.168.0.133 - - [02/Oct/2015 07:38:59] "GET / HTTP/1.1" 302 - 0.0202
+192.168.0.133 - - [02/Oct/2015 07:38:59] "GET /monitor HTTP/1.1" 200 2210 0.0253
+192.168.0.133 - - [02/Oct/2015 07:39:20] "GET /monitor HTTP/1.1" 200 2210 0.0196
+192.168.0.133 - - [02/Oct/2015 07:39:20] "GET /favicon.ico HTTP/1.1" 200 5430 0.0046
+192.168.0.133 - - [02/Oct/2015 07:39:20] "GET /monitor HTTP/1.1" 200 2210 0.0187
+192.168.0.133 - - [02/Oct/2015 07:39:22] "GET /views/meter.html HTTP/1.1" 200 336 0.0070
+192.168.0.133 - - [02/Oct/2015 07:40:50] "GET /events HTTP/1.1" 200 - 88.5624
+192.168.0.133 - - [02/Oct/2015 07:42:23] "GET /events HTTP/1.1" 200 - 90.0017
+192.168.0.133 - - [02/Oct/2015 07:43:26] "GET /events HTTP/1.1" 200 - 60.0009
+192.168.0.133 - - [02/Oct/2015 07:44:29] "GET /events HTTP/1.1" 200 - 60.0004
+192.168.0.133 - - [02/Oct/2015 07:45:32] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.133 - - [02/Oct/2015 07:46:35] "GET /events HTTP/1.1" 200 - 60.0001
+192.168.0.133 - - [02/Oct/2015 07:47:38] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.133 - - [02/Oct/2015 07:48:41] "GET /events HTTP/1.1" 200 - 60.0002
+192.168.0.133 - - [02/Oct/2015 07:49:44] "GET /events HTTP/1.1" 200 - 60.0003
+192.168.0.133 - - [02/Oct/2015 07:50:47] "GET /events HTTP/1.1" 200 - 60.0000
+192.168.0.133 - - [02/Oct/2015 07:52:20] "GET /events HTTP/1.1" 200 - 89.9996
+192.168.0.133 - - [02/Oct/2015 07:53:23] "GET /events HTTP/1.1" 200 - 59.9994
+192.168.0.133 - - [02/Oct/2015 07:54:26] "GET /events HTTP/1.1" 200 - 59.9995
+192.168.0.140 - - [02/Oct/2015 08:25:25] "GET / HTTP/1.1" 302 - 0.0028
+192.168.0.140 - - [02/Oct/2015 08:25:25] "GET /monitor HTTP/1.1" 200 2210 0.0240
+192.168.0.140 - - [02/Oct/2015 08:25:28] "GET /views/meter.html HTTP/1.1" 200 336 0.0046
+192.168.0.133 - - [02/Oct/2015 08:28:01] "GET /events HTTP/1.1" 200 - 2011.3558
+192.168.0.133 - - [02/Oct/2015 08:28:01] "GET / HTTP/1.1" 302 - 0.0030
+192.168.0.133 - - [02/Oct/2015 08:28:02] "GET /monitor HTTP/1.1" 200 2210 0.0231
+192.168.0.133 - - [02/Oct/2015 08:28:04] "GET /views/meter.html HTTP/1.1" 200 336 0.0053
+192.168.0.133 - - [02/Oct/2015 09:23:27] "GET /events HTTP/1.1" 200 - 3323.4523
+192.168.0.133 - - [02/Oct/2015 09:23:29] "GET / HTTP/1.1" 302 - 0.0032
+192.168.0.133 - - [02/Oct/2015 09:23:29] "GET /monitor HTTP/1.1" 200 2210 0.0191
+192.168.0.133 - - [02/Oct/2015 09:23:32] "GET /views/meter.html HTTP/1.1" 200 336 0.0049
+192.168.0.133 - - [02/Oct/2015 09:26:35] "GET /events HTTP/1.1" 200 - 184.2235
+192.168.0.133 - - [02/Oct/2015 09:46:51] "GET / HTTP/1.1" 302 - 0.0033
+192.168.0.133 - - [02/Oct/2015 09:46:51] "GET /monitor HTTP/1.1" 200 2210 0.0186
+192.168.0.133 - - [02/Oct/2015 09:46:53] "GET /views/meter.html HTTP/1.1" 200 336 0.0087
+192.168.0.133 - - [02/Oct/2015 09:53:53] "GET /events HTTP/1.1" 200 - 421.0595
+192.168.0.133 - - [02/Oct/2015 09:54:26] "GET / HTTP/1.1" 302 - 0.0033
+192.168.0.133 - - [02/Oct/2015 09:54:26] "GET /monitor HTTP/1.1" 200 2210 0.0189
+192.168.0.133 - - [02/Oct/2015 09:54:28] "GET /views/meter.html HTTP/1.1" 200 336 0.0048
+192.168.0.133 - - [02/Oct/2015 09:58:05] "GET /events HTTP/1.1" 200 - 218.0078
+192.168.0.133 - - [02/Oct/2015 09:59:22] "GET / HTTP/1.1" 302 - 0.0033
+192.168.0.133 - - [02/Oct/2015 09:59:22] "GET /monitor HTTP/1.1" 200 2210 0.0217
+192.168.0.133 - - [02/Oct/2015 09:59:25] "GET /views/meter.html HTTP/1.1" 200 336 0.0052
+192.168.0.140 - - [02/Oct/2015 10:02:12] "GET /events HTTP/1.1" 200 - 5804.1820
+192.168.0.133 - - [02/Oct/2015 10:56:55] "GET /events HTTP/1.1" 200 - 3450.4193
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
+================================================================================
+scheduler caught exception:
+Unknown MySQL server host 'RaspberryNAS' (2)
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `connect'
+/var/lib/gems/1.9.1/gems/mysql2-0.4.1/lib/mysql2/client.rb:79:in `initialize'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `new'
+/home/pi/decibel_monitor/jobs/monitor.rb:6:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:230:in `trigger_block'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/jobs.rb:204:in `block in trigger'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `call'
+/var/lib/gems/1.9.1/gems/rufus-scheduler-2.0.24/lib/rufus/sc/scheduler.rb:430:in `block in trigger_job'
+================================================================================
